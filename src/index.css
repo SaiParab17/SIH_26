@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #F5F3EE;
+    --surface-clay: #FDF9F0;
+    --surface-clay-hover: #FFFDF8;
+    --surface-flat: #EAE6DD;
+    --surface-elevated: #E0DACF;
+    --primary-blue: #3157D5;
+    --primary-dark: #063CBC;
+    --secondary-coral: #DE775A;
+    --secondary-dark: #9B442B;
+    --text-main: #171717;
+    --text-muted: #6E6A62;
+    --border-subtle: #D8D3C8;
+    --border-strong: #C4BEB1;
+    --status-success: #4C8768;
+    --status-warning: #C18A34;
+    --status-danger: #C15D5D;
+    --status-info: #58779F;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  code, pre, .font-mono, .data-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Tactile Clay / Soft-Industrial UI Utility Classes */
+.clay-card {
+  background-color: #FDF9F0;
+  border: 1px solid rgba(216, 211, 200, 0.85);
+  box-shadow: 0 4px 16px -2px rgba(45, 38, 25, 0.06), 0 2px 6px -1px rgba(45, 38, 25, 0.04);
+  border-radius: 0.75rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clay-card:hover {
+  box-shadow: 0 8px 24px -4px rgba(45, 38, 25, 0.1), 0 4px 10px -2px rgba(45, 38, 25, 0.06);
+  transform: translateY(-2px);
+}
+
+.clay-button {
+  background-color: #3157D5;
+  color: #FFFFFF;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 6px rgba(49, 87, 213, 0.25);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clay-button:hover {
+  background-color: #063CBC;
+  box-shadow: 0 4px 12px rgba(6, 60, 188, 0.35);
+  transform: translateY(-1px);
+}
+
+.clay-button-secondary {
+  background-color: #FDF9F0;
+  color: #171717;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.375rem;
+  border: 1px solid #D8D3C8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clay-button-secondary:hover {
+  background-color: #EAE6DD;
+  border-color: #C4BEB1;
+}
+
+.data-panel {
+  background-color: #EAE6DD;
+  border: 1px solid #D8D3C8;
+  border-radius: 0.5rem;
+}
+
+.badge-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F3EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D3C8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4BEB1;
+}
