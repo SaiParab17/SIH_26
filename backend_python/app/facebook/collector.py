@@ -25,7 +25,7 @@ class FacebookCollector(BaseSocialCollector):
 
     def __init__(self, headless: bool = True, timeout_ms: int = 30000):
         super().__init__(platform_name="facebook", headless=headless, timeout_ms=timeout_ms)
-        self.browser_mgr = BrowserManager(headless=headless, use_camoufox=True, timeout_ms=timeout_ms, platform_name="facebook")
+        self.browser_mgr = BrowserManager(headless=headless, use_camoufox=False, timeout_ms=timeout_ms, platform_name="facebook")
         self.deduplicator = Deduplicator()
 
     def use_existing_session(self, browser_mgr: BrowserManager, page: Any) -> None:

@@ -1,7 +1,7 @@
 """
-Interactive X / Twitter 3-Minute Login Setup Script.
-Launches Playwright Chromium with persistent user profile in 'user_data/x'.
-Gives the user 3 minutes to log into X (Twitter) and saves cookies/session automatically.
+Interactive Facebook 3-Minute Login Setup Script.
+Launches Playwright Chromium with persistent user profile in 'user_data/facebook'.
+Gives the user 3 minutes to log into Facebook and saves cookies/session automatically.
 """
 
 import os
@@ -19,10 +19,10 @@ USER_DATA_DIR = os.path.join(os.path.dirname(__file__), "user_data", "shared_chr
 
 async def main():
     print("=" * 70)
-    print("[X/Twitter Login Setup] Playwright Chromium Session Setup")
+    print("[Facebook Login Setup] Playwright Chromium Session Setup")
     print("=" * 70)
     print(f"Profile Storage Directory: {USER_DATA_DIR}")
-    print("Launching visible Chromium browser... Please complete your X login.")
+    print("Launching visible Chromium browser... Please complete your Facebook login.")
     print("=" * 70)
 
     os.makedirs(USER_DATA_DIR, exist_ok=True)
@@ -38,7 +38,7 @@ async def main():
         )
 
         page = context.pages[0] if context.pages else await context.new_page()
-        await page.goto("https://x.com/i/flow/login", wait_until="domcontentloaded")
+        await page.goto("https://www.facebook.com/", wait_until="domcontentloaded")
 
         total_seconds = 180
         start_time = time.time()
@@ -53,17 +53,23 @@ async def main():
                 break
 
             current_url = page.url
-            if "home" in current_url.lower() or "explore" in current_url.lower():
-                print("\n[SUCCESS] Detected logged-in session on X!")
-                break
+            if "facebook.com" in current_url.lower() and "login" not in current_url.lower():
+                # Check if home feed or profile is loaded
+                try:
+                    title = await page.title()
+                    if "Facebook" in title and ("Facebook" not in title or len(title) > 8):
+                        print(f"\n[SUCCESS] Detected logged-in Facebook session! (Title: {title})")
+                        break
+                except Exception:
+                    pass
 
             sys.stdout.write(f"\r[TIMER] Time remaining: {remaining}s | Page: {current_url[:55]}...   ")
             sys.stdout.flush()
             await asyncio.sleep(2)
 
-        print("\n\n[INFO] Saving persistent X login session cookies...")
+        print("\n\n[INFO] Saving persistent Facebook login session cookies...")
         await context.close()
-        print("[SUCCESS] Done! X session saved to 'user_data/x'. Future scraping will use this login!")
+        print("[SUCCESS] Done! Facebook session saved to 'user_data/facebook'. Future scraping will use this login!")
 
 if __name__ == "__main__":
     asyncio.run(main())

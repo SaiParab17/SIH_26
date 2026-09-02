@@ -287,22 +287,22 @@ async def run_multi_platform_task(job_id: str, request: CollectionRequest) -> No
     is_headless = request.headless if request.headless is not None else False
     target_platforms = request.platforms or ["facebook", "instagram"]
 
-    # Single BrowserManager instance maintaining continuous open session across platforms
+    # Single BrowserManager instance maintaining continuous open Chromium session across platforms
     browser_mgr = BrowserManager(
         headless=is_headless,
-        use_camoufox=True,
+        use_camoufox=False,
         timeout_ms=75000,
         platform_name="instagram",
     )
 
     try:
         job.status = "running"
-        job.message = f"Launching open Camoufox session for {', '.join(target_platforms)}..."
+        job.message = f"Launching open Chromium session for {', '.join(target_platforms)}..."
         _, page = await browser_mgr.launch()
 
         # 1. Facebook Collection Phase
         if "facebook" in target_platforms:
-            job.message = f"Scraping Facebook live posts for query '{request.query}' in Camoufox..."
+            job.message = f"Scraping Facebook live posts for query '{request.query}' in Chromium..."
             fb_collector = FacebookCollector(headless=is_headless)
             fb_collector.use_existing_session(browser_mgr, page)
 
@@ -351,6 +351,37 @@ async def run_multi_platform_task(job_id: str, request: CollectionRequest) -> No
                     for ev in insta_events[:min(len(insta_events), 5)]:
                         if ev.source.url and ev.event_type == "post":
                             comms = await insta_collector.collect_comments(
+                                post_url=ev.source.url,
+                                parent_event_id=ev.event_id,
+                                limit=request.comments_per_post,
+                            )
+                            if comms:
+                                save_events(comms, current_query=request.query)
+
+        # 3. X / Twitter Collection Phase in the SAME active open browser
+        if "x" in target_platforms or "twitter" in target_platforms:
+            logger.info("Instagram collection complete — keeping browser open and navigating to X/Twitter...")
+            job.message = "Instagram scraping complete! Keeping browser open and switching to X/Twitter..."
+            await asyncio.sleep(2)
+
+            from app.x.collector import XCollector
+            x_collector = XCollector(headless=is_headless)
+            x_collector.use_existing_session(browser_mgr, page)
+
+            x_events = await x_collector.collect_posts(
+                query=request.query,
+                target_count=min(request.target_posts, 10),
+                max_pages=request.max_pages,
+                comments_per_post=request.comments_per_post,
+                job_status=job,
+            )
+            if x_events:
+                save_events(x_events, current_query=request.query)
+
+                if request.comments_per_post > 0:
+                    for ev in x_events[:min(len(x_events), 5)]:
+                        if ev.source.url and ev.event_type == "post":
+                            comms = await x_collector.collect_comments(
                                 post_url=ev.source.url,
                                 parent_event_id=ev.event_id,
                                 limit=request.comments_per_post,

@@ -59,7 +59,7 @@ class InstagramCollector(BaseSocialCollector):
         super().__init__(platform_name="instagram", headless=headless, timeout_ms=timeout_ms)
         self.browser_mgr = BrowserManager(
             headless=headless,
-            use_camoufox=True,
+            use_camoufox=False,
             timeout_ms=timeout_ms,
             platform_name="instagram",
         )
@@ -95,6 +95,12 @@ class InstagramCollector(BaseSocialCollector):
             await self.start_session()
 
         try:
+            # 1. Establish authenticated session on Instagram home feed first
+            if "instagram.com" not in self.page.url.lower() or "login" in self.page.url.lower():
+                logger.info("Opening Instagram main feed to verify session...")
+                await self.page.goto("https://www.instagram.com/", wait_until="domcontentloaded")
+                await self.browser_mgr.pace(3.0)
+
             clean_tag = query.replace("#", "").strip().replace(" ", "").lower() or "trending"
             encoded_query = urllib.parse.quote(query)
 

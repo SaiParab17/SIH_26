@@ -85,31 +85,39 @@ export const CollectionSetupPage: React.FC<CollectionSetupPageProps> = ({ onStar
 
         const isFbEnabled = fbPlatform && fbPlatform.status !== 'disabled';
         const isInstaEnabled = instaPlatform && instaPlatform.status !== 'disabled';
+        const isXEnabled = xPlatform && xPlatform.status !== 'disabled';
 
-        // A. Facebook & Instagram Collection (Camoufox)
-        if (isFbEnabled && isInstaEnabled) {
-          setCurrentStep('Launching single Camoufox session for Facebook & Instagram...');
+        const enabledWebPlatforms: string[] = [];
+        if (isFbEnabled) enabledWebPlatforms.push('facebook');
+        if (isInstaEnabled) enabledWebPlatforms.push('instagram');
+        if (isXEnabled) enabledWebPlatforms.push('x');
+
+        // Multi-Platform Continuous Browser Session (Facebook -> Instagram -> X)
+        if (enabledWebPlatforms.length >= 2) {
+          const platformNamesText = enabledWebPlatforms.map(p => p.toUpperCase()).join(' -> ');
+          setCurrentStep(`Launching single Chromium browser session for ${platformNamesText}...`);
           try {
-            const multiJob = await triggerMultiCollection(['facebook', 'instagram'], {
+            const multiJob = await triggerMultiCollection(enabledWebPlatforms, {
               query: topicQuery,
-              target_posts: Math.min(fbPlatform.targetItems, 20),
+              target_posts: Math.min(fbPlatform?.targetItems || 15, 20),
               max_pages: 10,
               comments_per_post: 5,
               posts_per_platform: 5,
               headless: !visibleBrowser,
             }, false);
 
-            setFbJobResult(multiJob);
-            setInstaJobResult(multiJob);
+            if (isFbEnabled) setFbJobResult(multiJob);
+            if (isInstaEnabled) setInstaJobResult(multiJob);
+            if (isXEnabled) setXJobResult(multiJob);
 
             await pollJobUntilComplete(multiJob.job_id, (st) => {
-              if (st.message) setCurrentStep(`[Facebook + Instagram] ${st.message}`);
+              if (st.message) setCurrentStep(`[Continuous Browser Pipeline] ${st.message}`);
             });
           } catch (multiErr) {
-            console.warn('Multi-platform Facebook/Instagram collection error:', multiErr);
+            console.warn('Multi-platform continuous browser collection error:', multiErr);
           }
         } else {
-          // Individual Facebook Scraping
+          // Individual Platform Fallback
           if (isFbEnabled) {
             setCurrentStep('Starting Facebook live scraping job...');
             try {
@@ -131,7 +139,6 @@ export const CollectionSetupPage: React.FC<CollectionSetupPageProps> = ({ onStar
             }
           }
 
-          // Individual Instagram Scraping
           if (isInstaEnabled) {
             setCurrentStep('Starting Instagram live scraping job...');
             try {
@@ -152,28 +159,26 @@ export const CollectionSetupPage: React.FC<CollectionSetupPageProps> = ({ onStar
               console.warn('Instagram live collection error:', instaErr);
             }
           }
-        }
 
-        // B. X (Twitter) Scraping (Runs AFTER Facebook & Instagram finish via Chromium)
-        if (xPlatform && xPlatform.status !== 'disabled') {
-          setCurrentStep('Facebook & Instagram complete. Starting X (Twitter) live scraping via Chromium...');
-          await new Promise((r) => setTimeout(r, 2000));
-          try {
-            const xJob = await triggerXCollection({
-              query: topicQuery,
-              target_posts: Math.min(xPlatform.targetItems, 10),
-              max_pages: 10,
-              comments_per_post: 5,
-              posts_per_platform: 5,
-              headless: !visibleBrowser,
-            }, false);
-            setXJobResult(xJob);
+          if (isXEnabled) {
+            setCurrentStep('Starting X (Twitter) live scraping job...');
+            try {
+              const xJob = await triggerXCollection({
+                query: topicQuery,
+                target_posts: Math.min(xPlatform.targetItems, 10),
+                max_pages: 10,
+                comments_per_post: 5,
+                posts_per_platform: 5,
+                headless: !visibleBrowser,
+              }, false);
+              setXJobResult(xJob);
 
-            await pollJobUntilComplete(xJob.job_id, (st) => {
-              if (st.message) setCurrentStep(`[X Twitter] ${st.message}`);
-            });
-          } catch (xErr) {
-            console.warn('X live collection error:', xErr);
+              await pollJobUntilComplete(xJob.job_id, (st) => {
+                if (st.message) setCurrentStep(`[X Twitter] ${st.message}`);
+              });
+            } catch (xErr) {
+              console.warn('X live collection error:', xErr);
+            }
           }
         }
       }

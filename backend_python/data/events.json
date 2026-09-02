@@ -1,17 +1,295 @@
 [
   {
-    "event_id": "fb_post_fb_3305849426",
+    "event_id": "x_post_2095144072377688277",
+    "platform": "x",
+    "event_type": "post",
+    "source": {
+      "source_id": "2095144072377688277",
+      "url": "https://x.com/purchase0264/status/2095144072377688277",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "purchase0264",
+      "username": "purchase0264",
+      "display_name": "Smoke the Silkie",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1570792597689450496/cFzIjHsn_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "My totally 100% mostly invalid take is that C or C++ should definitely be taught. I learned  Java  and did a lot of work in Python. After teaching myself C I realized it gave me Python superpowers because I was able to write modules in C that were faster, and also really understand",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": 2
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T13:37:27.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T13:39:07.650741Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "x_post_2095143493316596121",
+    "platform": "x",
+    "event_type": "post",
+    "source": {
+      "source_id": "2095143493316596121",
+      "url": "https://x.com/whitehorsemanpo/status/2095143493316596121",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "whitehorsemanpo",
+      "username": "whitehorsemanpo",
+      "display_name": "White Horse Manpower Consultancy Private Limited",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2056287850543620096/95bZvrN1_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "IT JOBS\n\nWhite Horse Manpower is hiring across Bangalore, Pune and Chennai for exciting IT opportunities!\n\nSAP, Oracle,  Java  Full Stack, Python, Automation Testing, ServiceNow, ETL Testing, Networking and ITSM roles.\n\nExp 2 to 6+ years,\nhrteamwhmc@whitehorsemanpower.in",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [
+        "@whitehorsemanpower.in"
+      ],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": 3
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": [
+        "@whitehorsemanpower.in"
+      ]
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T13:35:09.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T13:39:07.771721Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "x_reply_2095144072377688277",
+    "platform": "x",
+    "event_type": "reply",
+    "source": {
+      "source_id": "2095144072377688277",
+      "url": "https://x.com/purchase0264/status/2095144072377688277",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "purchase0264",
+      "username": "purchase0264",
+      "display_name": "Smoke the Silkie",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1570792597689450496/cFzIjHsn_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "My totally 100% mostly invalid take is that C or C++ should definitely be taught. I learned Java and did a lot of work in Python. After teaching myself C I realized it gave me Python superpowers because I was able to write modules in C that were faster, and also really understand how and why Python did the things it did.",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": "x_post_2095144072377688277",
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": "x_post_2095144072377688277",
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T13:37:27.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T13:39:20.087719Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent"
+    ]
+  },
+  {
+    "event_id": "x_reply_2095135319339532505",
+    "platform": "x",
+    "event_type": "reply",
+    "source": {
+      "source_id": "2095135319339532505",
+      "url": "https://x.com/whitehorsemanpo/status/2095135319339532505",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "whitehorsemanpo",
+      "username": "whitehorsemanpo",
+      "display_name": "White Horse Manpower Consultancy Private Limited",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2056287850543620096/95bZvrN1_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "IT JOBS – Immediate Joining, September 2026!\nBangalore, Pune and Chennai for exciting IT opportunities!\n\nOpenings include SAP, Oracle, Java Full Stack, Python, Automation Testing, ServiceNow, ETL Testing, Networking and ITSM roles.\n2 to 6+ years,\nhrteamwhmc@whitehorsemanpower.in",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [
+        "@whitehorsemanpower.in"
+      ],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": 12
+    },
+    "relationships": {
+      "reply_to": "x_post_2095143493316596121",
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": "x_post_2095143493316596121",
+      "mentions": [
+        "@whitehorsemanpower.in"
+      ]
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T13:02:40.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T13:39:43.205464Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent"
+    ]
+  },
+  {
+    "event_id": "fb_post_1646338996856479",
     "platform": "facebook",
     "event_type": "post",
     "source": {
-      "source_id": "fb_3305849426",
-      "url": "https://www.facebook.com/permalink.php?story_fbid=fb_3305849426",
+      "source_id": "1646338996856479",
+      "url": "https://www.facebook.com/photo/?fbid=1646338996856479&set=a.283229066500819",
       "collector": "facebook_playwright"
     },
     "author": {
-      "user_id": "officers_online_academy_view_story",
-      "username": "officers_online_academy_view_story",
-      "display_name": "Officers Online Academy, view story",
+      "user_id": "no_one_cares_view_story",
+      "username": "no_one_cares_view_story",
+      "display_name": "No One Cares, view story",
       "avatarUrl": null,
       "verified": null,
       "followers_count": null,
@@ -20,7 +298,7 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "महाराष्ट्र सरकार तर्फे विदेश शिक्षण घेण्यासाठी OBC स्कॉलरशिप 2 Cr रु पर्यत स्कॉलरशिप मध्ये कव्हर होणार abroad education scholarship for Maharashtra government to abroad…  See more",
+      "text": "A New Jersey family got the shock of their lives after discovering an 8-foot Burmese python hiding beneath their shed!  T…  See more",
       "language": "en",
       "hashtags": [],
       "mentions": [],
@@ -28,7 +306,489 @@
     },
     "engagement": {
       "likes": 0,
-      "comments": 5,
+      "comments": 71,
+      "shares": 54,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:10:45.408848Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:10:45.411103Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "fb_post_1500917718729108",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "1500917718729108",
+      "url": "https://www.facebook.com/photo/?fbid=1500917718729108&set=a.456019453218945",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "python_coding_view_story",
+      "username": "python_coding_view_story",
+      "display_name": "Python Coding, view story",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "WiFi Password Viewer in Python",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 161,
+      "shares": 706,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:10:45.545119Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:10:45.545551Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "fb_post_1411348637686017",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "1411348637686017",
+      "url": "https://www.facebook.com/photo/?fbid=1411348637686017&set=a.456019453218945",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "python_coding_view_story",
+      "username": "python_coding_view_story",
+      "display_name": "Python Coding, view story",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "“Becoming a Python Developer”",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 93,
+      "shares": 275,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:10:50.265245Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:10:50.265350Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "fb_post_fb_2956783248",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "fb_2956783248",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=fb_2956783248",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "mission01",
+      "username": "mission01",
+      "display_name": "Mission01",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Python   vs me   #trending   #fypシ゚   #comedy   #goviral   #viralreels",
+      "language": "en",
+      "hashtags": [
+        "#viralreels",
+        "#comedy",
+        "#fypシ",
+        "#goviral",
+        "#trending"
+      ],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 9800,
+      "shares": 12000,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:10:55.070942Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:10:55.071030Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "fb_post_1358805639606984",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "1358805639606984",
+      "url": "https://www.facebook.com/photo/?fbid=1358805639606984&set=a.456019453218945",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "python_coding_view_story",
+      "username": "python_coding_view_story",
+      "display_name": "Python Coding, view story",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Python for Everything …  See more",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 59,
+      "shares": 130,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:11:09.362878Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:11:09.362962Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "fb_post_fb_671919645",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "fb_671919645",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=fb_671919645",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "dean_schneider_view_story",
+      "username": "dean_schneider_view_story",
+      "display_name": "Dean Schneider, view story",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Wild Rock-Python Rescue",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 231,
+      "shares": 124,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:11:14.373619Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:11:14.373728Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "fb_post_1505409594954395",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "1505409594954395",
+      "url": "https://www.facebook.com/photo/?fbid=1505409594954395&set=a.627632729398757",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "the_dodo_view_story",
+      "username": "the_dodo_view_story",
+      "display_name": "The Dodo, view story",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Jodie Foster the python just made medical history  …  See more",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 612,
+      "shares": 1700,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:11:14.449518Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:11:14.449610Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "fb_post_122171544548976205",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "122171544548976205",
+      "url": "https://www.facebook.com/photo/?fbid=122171544548976205&set=gm.1075377525385816&idorvanity=586733997583507",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "allez_les_parieurs_groupe_de_djetkar",
+      "username": "allez_les_parieurs_groupe_de_djetkar",
+      "display_name": "ALLEZ LES PARIEURS (groupe de DJETKAR)",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "The Python script story is really great, you don't necessarily need to play the exact scores but you can focus on the wins and you make your profits. How to do it is simple.. just save this image and go to Gemini, add the image, then write below... I WANT THE Python SCRIPT for the match Aston vs Arsenal for example  Thanks again Francis Malela the Brazilian    ·  See original    ·  Rate this translation",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
       "shares": 3,
       "views": null
     },
@@ -40,9 +800,9 @@
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:33:10.802511Z",
+      "created_at": "2026-09-02T14:11:19.167593Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:33:10.802590Z"
+      "collected_at": "2026-09-02T14:11:19.167723Z"
     },
     "analysis": {
       "sentiment": {
@@ -68,18 +828,18 @@
     ]
   },
   {
-    "event_id": "fb_post_fb_1332977414",
+    "event_id": "fb_post_fb_1243402675",
     "platform": "facebook",
     "event_type": "post",
     "source": {
-      "source_id": "fb_1332977414",
-      "url": "https://www.facebook.com/permalink.php?story_fbid=fb_1332977414",
+      "source_id": "fb_1243402675",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=fb_1243402675",
       "collector": "facebook_playwright"
     },
     "author": {
-      "user_id": "anees_kutty_and_2_others_follow",
-      "username": "anees_kutty_and_2_others_follow",
-      "display_name": "Anees Kutty and 2 others  · Follow",
+      "user_id": "rob_the_ranger_wildlife_videos_view_story",
+      "username": "rob_the_ranger_wildlife_videos_view_story",
+      "display_name": "Rob The Ranger Wildlife Videos, view story",
       "avatarUrl": null,
       "verified": null,
       "followers_count": null,
@@ -88,7 +848,7 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "Everything You Need to Know About the Erasmus Mundus Scholarship!  D— at  Anees Classes for Defence Competitive Exams .…  See more",
+      "text": "Look at the python we saw!!…  See more",
       "language": "en",
       "hashtags": [],
       "mentions": [],
@@ -96,8 +856,8 @@
     },
     "engagement": {
       "likes": 0,
-      "comments": 0,
-      "shares": 4,
+      "comments": 2000,
+      "shares": 1700,
       "views": null
     },
     "relationships": {
@@ -108,9 +868,9 @@
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:33:15.853711Z",
+      "created_at": "2026-09-02T14:11:23.867655Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:33:15.853825Z"
+      "collected_at": "2026-09-02T14:11:23.867734Z"
     },
     "analysis": {
       "sentiment": {
@@ -136,18 +896,18 @@
     ]
   },
   {
-    "event_id": "fb_post_965549928701699",
+    "event_id": "fb_comment_pfbid01TAbMBMKEwqD3qpnPvKBSS1VN6w1tLtecyGedEy44WZ51nAoHoa2umSPUY466t8hl",
     "platform": "facebook",
-    "event_type": "post",
+    "event_type": "comment",
     "source": {
-      "source_id": "965549928701699",
-      "url": "https://www.facebook.com/photo/?fbid=965549928701699&set=pcb.965550402034985",
+      "source_id": "pfbid01TAbMBMKEwqD3qpnPvKBSS1VN6w1tLtecyGedEy44WZ51nAoHoa2umSPUY466t8hl",
+      "url": "https://www.facebook.com/pythonclcoding/posts/pfbid01TAbMBMKEwqD3qpnPvKBSS1VN6w1tLtecyGedEy44WZ51nAoHoa2umSPUY466t8hl?comment_id=1477637154047602",
       "collector": "facebook_playwright"
     },
     "author": {
-      "user_id": "podar_international_school_shirur",
-      "username": "podar_international_school_shirur",
-      "display_name": "Podar International School - Shirur",
+      "user_id": "sunday_5_july_2026_at_14_44",
+      "username": "sunday_5_july_2026_at_14_44",
+      "display_name": "Sunday 5 July 2026 at 14:44",
       "avatarUrl": null,
       "verified": null,
       "followers_count": null,
@@ -156,7 +916,7 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "Pre-Secondary Scholarship Examination  P…  See more",
+      "text": "Get one to one support for every problems   https://www.facebook.com/pythonclcoding/subscribenow...",
       "language": "en",
       "hashtags": [],
       "mentions": [],
@@ -164,21 +924,21 @@
     },
     "engagement": {
       "likes": 0,
-      "comments": 20,
-      "shares": 2,
+      "comments": 0,
+      "shares": 0,
       "views": null
     },
     "relationships": {
-      "reply_to": null,
+      "reply_to": "fb_post_1500917718729108",
       "repost_of": null,
       "quoted_event_id": null,
-      "parent_post_id": null,
+      "parent_post_id": "fb_post_1500917718729108",
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:33:21.074506Z",
+      "created_at": "2026-09-02T14:12:15.882850Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:33:21.074611Z"
+      "collected_at": "2026-09-02T14:12:15.882951Z"
     },
     "analysis": {
       "sentiment": {
@@ -199,23 +959,22 @@
       }
     },
     "collection_reason": [
-      "recent",
-      "relevant"
+      "recent"
     ]
   },
   {
-    "event_id": "fb_post_fb_880612003",
+    "event_id": "fb_comment_pfbid0JKguH5myS4Q6APtyDxc5UrrTkmhj7BXnTSA9kJJ9HMXsihJVYZxKNNfpw31bz3zrl",
     "platform": "facebook",
-    "event_type": "post",
+    "event_type": "comment",
     "source": {
-      "source_id": "fb_880612003",
-      "url": "https://www.facebook.com/permalink.php?story_fbid=fb_880612003",
+      "source_id": "pfbid0JKguH5myS4Q6APtyDxc5UrrTkmhj7BXnTSA9kJJ9HMXsihJVYZxKNNfpw31bz3zrl",
+      "url": "https://www.facebook.com/pythonclcoding/posts/pfbid0JKguH5myS4Q6APtyDxc5UrrTkmhj7BXnTSA9kJJ9HMXsihJVYZxKNNfpw31bz3zrl?comment_id=924121450407164",
       "collector": "facebook_playwright"
     },
     "author": {
-      "user_id": "lila_poonawalla_foundation_lpf",
-      "username": "lila_poonawalla_foundation_lpf",
-      "display_name": "Lila Poonawalla Foundation - LPF",
+      "user_id": "sunday_29_march_2026_at_22_42",
+      "username": "sunday_29_march_2026_at_22_42",
+      "display_name": "Sunday 29 March 2026 at 22:42",
       "avatarUrl": null,
       "verified": null,
       "followers_count": null,
@@ -224,75 +983,7 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "Every scholarship awarded is more than financial support; it is an investment in a girl's future.…  See more",
-      "language": "en",
-      "hashtags": [],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 2,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:33:43.510795Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:33:43.510935Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_insta_1865531364",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "insta_1865531364",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "Reel",
+      "text": "Get one to one support for every problems   https://www.facebook.com/pythonclcoding/subscribenow...",
       "language": "en",
       "hashtags": [],
       "mentions": [],
@@ -305,16 +996,16 @@
       "views": null
     },
     "relationships": {
-      "reply_to": null,
+      "reply_to": "fb_post_1411348637686017",
       "repost_of": null,
       "quoted_event_id": null,
-      "parent_post_id": null,
+      "parent_post_id": "fb_post_1411348637686017",
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:35:36.978002Z",
+      "created_at": "2026-09-02T14:12:31.242638Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:35:36.993810Z"
+      "collected_at": "2026-09-02T14:12:31.242726Z"
     },
     "analysis": {
       "sentiment": {
@@ -335,17 +1026,16 @@
       }
     },
     "collection_reason": [
-      "recent",
-      "relevant"
+      "recent"
     ]
   },
   {
-    "event_id": "insta_post_insta_1426226663",
+    "event_id": "insta_post_DclzQKEiiZ_",
     "platform": "instagram",
     "event_type": "post",
     "source": {
-      "source_id": "insta_1426226663",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "source_id": "DclzQKEiiZ_",
+      "url": "https://www.instagram.com/p/DclzQKEiiZ_/",
       "collector": "instagram_camoufox"
     },
     "author": {
@@ -360,18 +1050,14 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "या सर्व Scholarship ची माहिती आपल्या Youtube चॅनल ला आहे (link bio मधे आहे ) \n\n#scholarships #maharashtra #study",
+      "text": "pythonclcoding",
       "language": "en",
-      "hashtags": [
-        "#study",
-        "#maharashtra",
-        "#scholarships"
-      ],
+      "hashtags": [],
       "mentions": [],
       "media": []
     },
     "engagement": {
-      "likes": 0,
+      "likes": 650,
       "comments": 0,
       "shares": 0,
       "views": null
@@ -384,9 +1070,9 @@
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:35:37.082344Z",
+      "created_at": "2026-09-02T14:14:00.005038Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.082511Z"
+      "collected_at": "2026-09-02T14:14:00.005146Z"
     },
     "analysis": {
       "sentiment": {
@@ -412,12 +1098,12 @@
     ]
   },
   {
-    "event_id": "insta_post_insta_4115202134",
+    "event_id": "insta_post_DckIOZ9iHFg",
     "platform": "instagram",
     "event_type": "post",
     "source": {
-      "source_id": "insta_4115202134",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "source_id": "DckIOZ9iHFg",
+      "url": "https://www.instagram.com/p/DckIOZ9iHFg/",
       "collector": "instagram_camoufox"
     },
     "author": {
@@ -432,20 +1118,14 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "🎓 SBI Platinum Jubilee Asha Scholarship 2026–27\n🚨 Scholarship Alert!\nApplications are now open for the SBI Platinum Jubilee Asha Scholarship 2026–27. Financial assistance is available for eligible students from Class 9 to postgraduate studies, including IITs, IIMs, MBBS, and overseas education.\n📅 Apply before: 4 September 2026\n🌐 Apply here: https://www.sbiashascholarship.co.in\n📌 Share this with friends who might benefit!\n#Scholarship #SBIAshaScholarship #Education #Students #FinancialAid HigherEducation",
+      "text": "plpython",
       "language": "en",
-      "hashtags": [
-        "#sbiashascholarship",
-        "#scholarship",
-        "#education",
-        "#financialaid",
-        "#students"
-      ],
+      "hashtags": [],
       "mentions": [],
       "media": []
     },
     "engagement": {
-      "likes": 0,
+      "likes": 1868,
       "comments": 0,
       "shares": 0,
       "views": null
@@ -458,9 +1138,9 @@
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:35:37.117204Z",
+      "created_at": "2026-09-02T14:14:19.585327Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.117315Z"
+      "collected_at": "2026-09-02T14:14:19.585425Z"
     },
     "analysis": {
       "sentiment": {
@@ -486,12 +1166,12 @@
     ]
   },
   {
-    "event_id": "insta_post_insta_2440213991",
+    "event_id": "insta_post_DcjXLNJjNGz",
     "platform": "instagram",
     "event_type": "post",
     "source": {
-      "source_id": "insta_2440213991",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "source_id": "DcjXLNJjNGz",
+      "url": "https://www.instagram.com/p/DcjXLNJjNGz/",
       "collector": "instagram_camoufox"
     },
     "author": {
@@ -506,20 +1186,14 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "🎓 Fully Funded Scholarships with Upcoming Deadlines! 🌍\nLooking to study abroad with full financial support? These opportunities cover tuition and offer benefits such as travel support, living allowances, health insurance, and more. 📚✈️\n\n⏰ Deadlines are approaching from August to mid-September 2026 — start preparing your application now!\n\n🔎 Find eligibility, requirements & application details at OYAOP.com\n\n#fullyfunded #scholarships #studyabroad #scholarshipopportunities #opportunity",
+      "text": "pythonclcoding",
       "language": "en",
-      "hashtags": [
-        "#scholarshipopportunities",
-        "#studyabroad",
-        "#opportunity",
-        "#scholarships",
-        "#fullyfunded"
-      ],
+      "hashtags": [],
       "mentions": [],
       "media": []
     },
     "engagement": {
-      "likes": 0,
+      "likes": 344,
       "comments": 0,
       "shares": 0,
       "views": null
@@ -532,9 +1206,9 @@
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:35:37.155010Z",
+      "created_at": "2026-09-02T14:14:26.374783Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.155115Z"
+      "collected_at": "2026-09-02T14:14:26.374858Z"
     },
     "analysis": {
       "sentiment": {
@@ -560,19 +1234,19 @@
     ]
   },
   {
-    "event_id": "insta_post_insta_3773652387",
-    "platform": "instagram",
+    "event_id": "x_post_2095153824780439959",
+    "platform": "x",
     "event_type": "post",
     "source": {
-      "source_id": "insta_3773652387",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
-      "collector": "instagram_camoufox"
+      "source_id": "2095153824780439959",
+      "url": "https://x.com/soucontraoagro/status/2095153824780439959",
+      "collector": "x_playwright"
     },
     "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
+      "user_id": "soucontraoagro",
+      "username": "soucontraoagro",
+      "display_name": "lavoura",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2056466203963527168/GhMDYq4Z_normal.jpg",
       "verified": null,
       "followers_count": null,
       "location": null,
@@ -580,7 +1254,7 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "scholarship, scholarships, scholarship deadlines, upcoming scholarship deadlines",
+      "text": "python , é meu projeto de extensão",
       "language": "en",
       "hashtags": [],
       "mentions": [],
@@ -600,9 +1274,9 @@
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:35:37.229181Z",
+      "created_at": "2026-09-02T14:16:12.000Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.229292Z"
+      "collected_at": "2026-09-02T14:17:01.387529Z"
     },
     "analysis": {
       "sentiment": {
@@ -628,19 +1302,19 @@
     ]
   },
   {
-    "event_id": "insta_post_insta_3934255150",
-    "platform": "instagram",
+    "event_id": "x_post_2095153806589739135",
+    "platform": "x",
     "event_type": "post",
     "source": {
-      "source_id": "insta_3934255150",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
-      "collector": "instagram_camoufox"
+      "source_id": "2095153806589739135",
+      "url": "https://x.com/rus3t/status/2095153806589739135",
+      "collector": "x_playwright"
     },
     "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
+      "user_id": "rus3t",
+      "username": "rus3t",
+      "display_name": "russ taphouse",
+      "avatarUrl": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
       "verified": null,
       "followers_count": null,
       "location": null,
@@ -648,81 +1322,7 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "Sbi platinum jubilee asha scholarship Scheme 2026\nDm or call to apply... 7006672181\nLike and share with others!!!\nall students from class 9th to higher education are eligible \n\nMake sure you have account in SBI Bank\n\n#scholarshipopportunities #scholarship #scholarshipsavailable #scholarshipscheme #scholarships",
-      "language": "en",
-      "hashtags": [
-        "#scholarshipopportunities",
-        "#scholarship",
-        "#scholarships",
-        "#scholarshipscheme",
-        "#scholarshipsavailable"
-      ],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:35:37.299566Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.299677Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_insta_3130424325",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "insta_3130424325",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "India Foundation Scholarship 2026 | Get upto rs 75,000",
+      "text": "That`s an old Monty  Python  sketch. Batley women depicting Pearl Harbour . I recognise the handbags.",
       "language": "en",
       "hashtags": [],
       "mentions": [],
@@ -742,9 +1342,9 @@
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:35:37.370132Z",
+      "created_at": "2026-09-02T14:16:08.000Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.370230Z"
+      "collected_at": "2026-09-02T14:17:01.418796Z"
     },
     "analysis": {
       "sentiment": {
@@ -770,19 +1370,19 @@
     ]
   },
   {
-    "event_id": "insta_post_insta_3815809502",
-    "platform": "instagram",
+    "event_id": "x_post_2095153784913830001",
+    "platform": "x",
     "event_type": "post",
     "source": {
-      "source_id": "insta_3815809502",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
-      "collector": "instagram_camoufox"
+      "source_id": "2095153784913830001",
+      "url": "https://x.com/brick4956/status/2095153784913830001",
+      "collector": "x_playwright"
     },
     "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
+      "user_id": "brick4956",
+      "username": "brick4956",
+      "display_name": "August Wittorp",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/883770316937240577/wtGyLCtR_normal.jpg",
       "verified": null,
       "followers_count": null,
       "location": null,
@@ -790,14 +1390,9 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "TOP 10 SCHOLARSHIPS WITHOUT IELTS\n.\n.\n.\n.\n[ scholarship, scholarships, scholarship deadlines, upcoming scholarship deadlines ]\n.\n.\n.\n.\n#scholarship #scholarships #fullyfundedscholarship #fullyfundedscholarships",
+      "text": "Doing some serious harness engineering around scientific AI.\nThe basic architecture is:\n Python  scientific core + Snakemake + uv + reproducible containers + pytest/Hypothesis + Ruff/mypy/Pydantic + HDF5 + RO-Crate + SLSA/Sigstore + read-only RAG + ParaView + OpenUSD +",
       "language": "en",
-      "hashtags": [
-        "#fullyfundedscholarships",
-        "#scholarship",
-        "#scholarships",
-        "#fullyfundedscholarship"
-      ],
+      "hashtags": [],
       "mentions": [],
       "media": []
     },
@@ -805,7 +1400,7 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "views": null
+      "views": 1
     },
     "relationships": {
       "reply_to": null,
@@ -815,9 +1410,9 @@
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:35:37.482779Z",
+      "created_at": "2026-09-02T14:16:03.000Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.482922Z"
+      "collected_at": "2026-09-02T14:17:01.452492Z"
     },
     "analysis": {
       "sentiment": {
@@ -843,19 +1438,19 @@
     ]
   },
   {
-    "event_id": "insta_post_insta_432832919",
-    "platform": "instagram",
+    "event_id": "x_post_2095153690319700257",
+    "platform": "x",
     "event_type": "post",
     "source": {
-      "source_id": "insta_432832919",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
-      "collector": "instagram_camoufox"
+      "source_id": "2095153690319700257",
+      "url": "https://x.com/theneuralduck/status/2095153690319700257",
+      "collector": "x_playwright"
     },
     "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
+      "user_id": "theneuralduck",
+      "username": "theneuralduck",
+      "display_name": "duck",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2065009858982891520/emb9WS1g_normal.jpg",
       "verified": null,
       "followers_count": null,
       "location": null,
@@ -863,11 +1458,419 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "Most families are not missing scholarship money because their child is unqualified.\n\nThey’re missing it because nobody told them where to look.\n\nThousands of dollars in scholarships are available for high school students, college students, women in technology, mothers returning to school and families who simply need financial support.\n\nBut here’s the truth:\n\nYou cannot apply for an opportunity you never knew existed.\n\nSave this list. Research every scholarship. Confirm the requirements and deadlines on each organization’s official website—and start applying early.\n\nDo not automatically count yourself out.\n\nLet the scholarship committee tell you no. Never reject yourself before submitting the application.\n\nSHARE this with a student, parent, teacher, coach or counselor. One share could help change someone’s entire future.\n\nComment “SCHOLARSHIP” if you want me to send you where you can find more opportunities like these, for free. \n\nAnd no, I don’t charge or try and upsell you in your DM’s either! \n\nLove you guys. \n\n- Coach @gerald_smiley",
+      "text": "Ive to use  Python  for work and only after looking into the internals and exploring c/c++ extensions in pytorch, projects like tinygrad I saw how much I didnt know and how much I missed by not learning C/C++\nEven the importance of types wasn't obvious until I worked on a big proj",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": 1
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:15:40.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:17:01.485645Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "x_post_2095153387402596674",
+    "platform": "x",
+    "event_type": "post",
+    "source": {
+      "source_id": "2095153387402596674",
+      "url": "https://x.com/epoch_obsidian/status/2095153387402596674",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "epoch_obsidian",
+      "username": "epoch_obsidian",
+      "display_name": "The Last Bull",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2042865857446187014/kZ7D7rJH_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "tools. hooks. evals. streaming.  python  + typescript. oss\n\ntry today",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": 1
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:14:28.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:17:01.527171Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "x_post_2095153268431462714",
+    "platform": "x",
+    "event_type": "post",
+    "source": {
+      "source_id": "2095153268431462714",
+      "url": "https://x.com/livdropv/status/2095153268431462714",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "livdropv",
+      "username": "livdropv",
+      "display_name": "clara.⚢",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2093406255893090304/xcARCaGB_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "python",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": 1
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:13:59.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:17:01.568451Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "x_post_2095153225553113559",
+    "platform": "x",
+    "event_type": "post",
+    "source": {
+      "source_id": "2095153225553113559",
+      "url": "https://x.com/ZX3ArHDPnQ99390/status/2095153225553113559",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "ZX3ArHDPnQ99390",
+      "username": "ZX3ArHDPnQ99390",
+      "display_name": "スーパーカブおじさん",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1756318351104819200/z-_u62Zg_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "昨日さぼったので2日間の結果\n 15件（クエ込み8800）\n3日間、延々とクラウドサービスやらパワーシェルやらを勉強していました！\n Python なんかも（動物か！？）\nまあ、サッパリ分からんですわ \nただ頭の体操程度ですね！",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": 3
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:13:49.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:17:01.607586Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "x_post_2095153072679133403",
+    "platform": "x",
+    "event_type": "post",
+    "source": {
+      "source_id": "2095153072679133403",
+      "url": "https://x.com/Loore02250744/status/2095153072679133403",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "Loore02250744",
+      "username": "Loore02250744",
+      "display_name": "Loore Kaalenebari",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1155189354253492224/fYBT-JaA_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "I will learn AI Automation and  Python  Programming",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": 1
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:13:13.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:17:01.642162Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "x_post_2095153020568850861",
+    "platform": "x",
+    "event_type": "post",
+    "source": {
+      "source_id": "2095153020568850861",
+      "url": "https://x.com/berdejoabogados/status/2095153020568850861",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "berdejoabogados",
+      "username": "berdejoabogados",
+      "display_name": "Berdejo Abogados",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/816359163160825856/jolm8N8d_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "¡ Ni Monty  Python  !\n\nSigan, por favor, su cantinela se ha vuelto desternillante.\n\nAhora mismo una convocatoria de elecciones sería aguar la fiesta.\n\nAgoten la legislatura y sigan con la comedia. Es irrepetible y es gratis. Netflix a su lado es aburridísimo.\n\nDiga lo de Rusia",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": 2
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:13:00.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:17:01.678035Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "x_post_2095153005213397314",
+    "platform": "x",
+    "event_type": "post",
+    "source": {
+      "source_id": "2095153005213397314",
+      "url": "https://x.com/ramarko1/status/2095153005213397314",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "ramarko1",
+      "username": "ramarko1",
+      "display_name": "Marko Radovančev",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2037915727815225344/wFayARh9_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Monty  Python  And The Holy Grail: Lady Of The Lake  https:// youtu.be/m15MNLtpYUE?si =Rq4gL_LAiqa7MHR1 …  via  @YouTube",
       "language": "en",
       "hashtags": [],
       "mentions": [
-        "@gerald_smiley"
+        "@youtube"
       ],
       "media": []
     },
@@ -875,7 +1878,7 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "views": null
+      "views": 2
     },
     "relationships": {
       "reply_to": null,
@@ -883,13 +1886,13 @@
       "quoted_event_id": null,
       "parent_post_id": null,
       "mentions": [
-        "@gerald_smiley"
+        "@youtube"
       ]
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:35:37.520202Z",
+      "created_at": "2026-09-02T14:12:57.000Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.520328Z"
+      "collected_at": "2026-09-02T14:17:05.631071Z"
     },
     "analysis": {
       "sentiment": {
@@ -915,19 +1918,19 @@
     ]
   },
   {
-    "event_id": "insta_post_insta_2890936456",
-    "platform": "instagram",
-    "event_type": "post",
+    "event_id": "x_reply_2095153824780439959",
+    "platform": "x",
+    "event_type": "reply",
     "source": {
-      "source_id": "insta_2890936456",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
-      "collector": "instagram_camoufox"
+      "source_id": "2095153824780439959",
+      "url": "https://x.com/soucontraoagro/status/2095153824780439959",
+      "collector": "x_playwright"
     },
     "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
+      "user_id": "soucontraoagro",
+      "username": "soucontraoagro",
+      "display_name": "lavoura",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2056466203963527168/GhMDYq4Z_normal.jpg",
       "verified": null,
       "followers_count": null,
       "location": null,
@@ -935,637 +1938,7 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "Scholarships in Canada 2027 | Study in Canada\n\nApply Link: https://brightscholarship.com/scholarships-in-canada-2027/\n\nUniversity: Canadian Universities\nDegree level: Bachelors, Masters, PhD\nScholarship coverage: Fully Funded\nEligible nationality: All Nationalities\nAward country: Canada\nLast date: Vary with University\n\n#BrightScholarship #FullyFunded #Scholarship #Canada #Students",
-      "language": "en",
-      "hashtags": [
-        "#scholarship",
-        "#brightscholarship",
-        "#students",
-        "#canada",
-        "#fullyfunded"
-      ],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:35:37.613181Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.613318Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_insta_1574750044",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "insta_1574750044",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "$100,000s in FREE money… and the only thing standing between you and it might be 30 minutes of your time.\n\nEvery year, millions of dollars in scholarships go unclaimed.\n\nNot because students aren’t smart enough.\n\nNot because they aren’t deserving.\n\nBut because they never apply.\n\nToo many students tell themselves:\n\n* “I probably won’t win.”\n* “Someone else is more qualified.”\n* “I’ll do it later.”\n\nThen the deadline passes.\n\nThe students who receive scholarships aren’t always the ones with the highest GPA or the most talent. They’re often the ones who simply took the time to fill out the application.\n\nOver the next couple of days, block off an hour.\n\nTurn off your notifications.\nPut your phone down.\nOpen your laptop.\nApply for every scholarship on this list that you’re eligible for.\n\nOne application could save you thousands of dollars.\n\nEven if it takes you an hour to complete an application and you win a $5,000 scholarship, that’s one of the highest hourly “paychecks” you’ll ever earn.\n\nDon’t let procrastination cost you opportunities that could change your future.\n\nYour future self will never regret applying.\n\nBut you might regret not applying.\n\nSave this post. Share it with a student or parent. Then come back after you’ve submitted your applications and let me know how many you completed.\n\nWhich scholarship are you applying for first?\n\nComment “scholarship” and I’ll send you a list of scholarships and places to look for free money. \n\n#scholarshipopportunities #scholarshipalert #collegemoney #collegescholarships #financialaid",
-      "language": "en",
-      "hashtags": [
-        "#scholarshipopportunities",
-        "#collegemoney",
-        "#collegescholarships",
-        "#financialaid",
-        "#scholarshipalert"
-      ],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:35:37.693391Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.693827Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_insta_2151262262",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "insta_2151262262",
-      "url": "https://www.instagram.com/explore/tags/scholarship/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "🇩🇪 Friedrich Ebert Foundation Scholarship in Germany 2026–27\n\nStudy in Germany with financial support through one of the country’s prestigious scholarship programs!\n\n🏛️ Scholarship Provider: Friedrich Ebert Foundation\n📍 Host Country: Germany\n🎓 Study Levels: Bachelor’s, Master’s & Diploma Programs\n🌍 Eligibility: International Students\n\n✨ Scholarship Benefits:\n✅ Monthly stipend of €934\n✅ Health insurance coverage\n✅ Additional child allowance of €160/month\n✅ Opportunity to study at top universities in Germany\n\nDetails link: https://opportunitiespedia.com/friedrich-ebert-foundation-scholarships-2026/\n\n🚀 Don’t miss this scholarship opportunity in Germany!\n\n🔖 #FriedrichEbertFoundation #StudyInGermany #Scholarships2026 #InternationalStudents #OpportunitiesPedia",
-      "language": "en",
-      "hashtags": [
-        "#scholarships2026",
-        "#friedrichebertfoundation",
-        "#studyingermany",
-        "#internationalstudents",
-        "#opportunitiespedia"
-      ],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:35:37.728774Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:35:37.728882Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_DcgNmpgIVP9",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "DcgNmpgIVP9",
-      "url": "https://www.instagram.com/p/DcgNmpgIVP9/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "careerwalaa_",
-      "language": "en",
-      "hashtags": [],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 582,
-      "comments": 0,
-      "shares": 0,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:35:45.219853Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:35:45.220255Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_DcQ8eBNMrln",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "DcQ8eBNMrln",
-      "url": "https://www.instagram.com/p/DcQ8eBNMrln/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "naukarisetu",
-      "language": "en",
-      "hashtags": [],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 1115,
-      "comments": 0,
-      "shares": 0,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:35:51.610197Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:35:51.610285Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_DbYXupYPNoY",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "DbYXupYPNoY",
-      "url": "https://www.instagram.com/p/DbYXupYPNoY/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "srajancareers",
-      "language": "en",
-      "hashtags": [],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 10,
-      "comments": 0,
-      "shares": 0,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:35:58.148664Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:35:58.164557Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_DcdlMpRykC0",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "DcdlMpRykC0",
-      "url": "https://www.instagram.com/p/DcdlMpRykC0/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "conrad_k_sangma",
-      "language": "en",
-      "hashtags": [],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 46332,
-      "comments": 0,
-      "shares": 0,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:36:05.187522Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:36:05.187618Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_Da5gk1hspBm",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "Da5gk1hspBm",
-      "url": "https://www.instagram.com/p/Da5gk1hspBm/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "nagendrasahu82",
-      "language": "en",
-      "hashtags": [],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 13510,
-      "comments": 0,
-      "shares": 0,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:36:12.048354Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:36:12.048448Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_DbnkmB6vC-y",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "DbnkmB6vC-y",
-      "url": "https://www.instagram.com/p/DbnkmB6vC-y/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "rajdigitalworld_official",
-      "language": "en",
-      "hashtags": [],
-      "mentions": [],
-      "media": []
-    },
-    "engagement": {
-      "likes": 5169,
-      "comments": 0,
-      "shares": 0,
-      "views": null
-    },
-    "relationships": {
-      "reply_to": null,
-      "repost_of": null,
-      "quoted_event_id": null,
-      "parent_post_id": null,
-      "mentions": []
-    },
-    "timestamps": {
-      "created_at": "2026-09-02T05:36:18.608528Z",
-      "updated_at": null,
-      "collected_at": "2026-09-02T05:36:18.608635Z"
-    },
-    "analysis": {
-      "sentiment": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "emotion": {
-        "label": "surprise",
-        "score": 0.0
-      },
-      "stance": {
-        "label": "neutral",
-        "score": 0.0
-      },
-      "sarcasm": {
-        "detected": false,
-        "score": 0.0
-      }
-    },
-    "collection_reason": [
-      "recent",
-      "relevant"
-    ]
-  },
-  {
-    "event_id": "insta_post_DcZA8pMoMRQ",
-    "platform": "instagram",
-    "event_type": "post",
-    "source": {
-      "source_id": "DcZA8pMoMRQ",
-      "url": "https://www.instagram.com/p/DcZA8pMoMRQ/",
-      "collector": "instagram_camoufox"
-    },
-    "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
-      "verified": null,
-      "followers_count": null,
-      "location": null,
-      "bio": null,
-      "inferred_interests": []
-    },
-    "content": {
-      "text": "scholarshipplugcenter",
+      "text": "python, é meu projeto de extensão",
       "language": "en",
       "hashtags": [],
       "mentions": [],
@@ -1578,16 +1951,16 @@
       "views": null
     },
     "relationships": {
-      "reply_to": null,
+      "reply_to": "x_post_2095153824780439959",
       "repost_of": null,
       "quoted_event_id": null,
-      "parent_post_id": null,
+      "parent_post_id": "x_post_2095153824780439959",
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:36:24.943460Z",
+      "created_at": "2026-09-02T14:16:12.000Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:36:24.943578Z"
+      "collected_at": "2026-09-02T14:17:17.634163Z"
     },
     "analysis": {
       "sentiment": {
@@ -1608,24 +1981,23 @@
       }
     },
     "collection_reason": [
-      "recent",
-      "relevant"
+      "recent"
     ]
   },
   {
-    "event_id": "insta_post_Dbs_7MYvPGD",
-    "platform": "instagram",
-    "event_type": "post",
+    "event_id": "x_reply_2095153806589739135",
+    "platform": "x",
+    "event_type": "reply",
     "source": {
-      "source_id": "Dbs_7MYvPGD",
-      "url": "https://www.instagram.com/p/Dbs_7MYvPGD/",
-      "collector": "instagram_camoufox"
+      "source_id": "2095153806589739135",
+      "url": "https://x.com/rus3t/status/2095153806589739135",
+      "collector": "x_playwright"
     },
     "author": {
-      "user_id": "instagram_creator",
-      "username": "instagram_creator",
-      "display_name": "Instagram Creator",
-      "avatarUrl": null,
+      "user_id": "rus3t",
+      "username": "rus3t",
+      "display_name": "russ taphouse",
+      "avatarUrl": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
       "verified": null,
       "followers_count": null,
       "location": null,
@@ -1633,7 +2005,7 @@
       "inferred_interests": []
     },
     "content": {
-      "text": "rohitbabajii",
+      "text": "That`s an old Monty Python sketch. Batley women depicting Pearl Harbour . I recognise the handbags.",
       "language": "en",
       "hashtags": [],
       "mentions": [],
@@ -1646,16 +2018,16 @@
       "views": null
     },
     "relationships": {
-      "reply_to": null,
+      "reply_to": "x_post_2095153806589739135",
       "repost_of": null,
       "quoted_event_id": null,
-      "parent_post_id": null,
+      "parent_post_id": "x_post_2095153806589739135",
       "mentions": []
     },
     "timestamps": {
-      "created_at": "2026-09-02T05:36:31.300136Z",
+      "created_at": "2026-09-02T14:16:08.000Z",
       "updated_at": null,
-      "collected_at": "2026-09-02T05:36:31.300228Z"
+      "collected_at": "2026-09-02T14:17:25.237390Z"
     },
     "analysis": {
       "sentiment": {
@@ -1676,8 +2048,208 @@
       }
     },
     "collection_reason": [
-      "recent",
-      "relevant"
+      "recent"
+    ]
+  },
+  {
+    "event_id": "x_reply_2095153784913830001",
+    "platform": "x",
+    "event_type": "reply",
+    "source": {
+      "source_id": "2095153784913830001",
+      "url": "https://x.com/brick4956/status/2095153784913830001",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "brick4956",
+      "username": "brick4956",
+      "display_name": "August Wittorp",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/883770316937240577/wtGyLCtR_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Doing some serious harness engineering around scientific AI.\nThe basic architecture is:\nPython scientific core + Snakemake + uv + reproducible containers + pytest/Hypothesis + Ruff/mypy/Pydantic + HDF5 + RO-Crate + SLSA/Sigstore + read-only RAG + ParaView + OpenUSD + SALib/OpenMDAO + FEniCSx + selective Rust + FMI later.\nThe point isn’t to throw a bunch of tools together. I’m separating responsibilities so no single part of the system—especially the AI—gets to both produce a scientific result and declare that result trustworthy.\nThe Python layer contains the actual numerical physics. uv locks the environment, Pydantic governs scientific schemas and parameters, Ruff/mypy catch structural problems, and pytest/Hypothesis test both software behavior and physical invariants such as conservation, bounds, convergence and impossible states.\nHDF5 stores the actual scientific outputs, while Snakemake makes the computational dependency graph explicit rather than hiding the whole experiment inside one giant script.\nAbove that is a separate trust/reproducibility layer. Containers capture the execution environment, RO-Crate records provenance, and SLSA/Sigstore plus detached hashes make it possible to verify where an artifact came from and whether it has been altered.\nThe AI side is deliberately separated from scientific authority. AI/RAG can retrieve evidence, reason about failures, suggest parameter changes, propose models and generate candidate modifications—but it cannot silently change authoritative scientific state or certify its own result.\nConceptually I’m aiming for:\nAI proposes → deterministic computation executes → independent verification decides.\nFEniCSx is also there as an independently implemented numerical benchmark rather than letting the primary solver effectively validate itself. SALib/OpenMDAO handle sensitivity and optimization, ParaView handles scientific fields, OpenUSD represents the machine/system, Rust is reserved for places where it actually buys something, and FMI comes later for external model coupling.\nI’ve had two different reactions to this architecture. One is that treating reproducibility as a first-class requirement is exactly what serious scientific AI needs. The other is that the minimum stack should stay closer to Python + uv + pytest + HDF5 initially, with workflow/provenance/supply-chain infrastructure added as complexity demands it.\nI think there’s probably a distinction between the right end-state architecture and the right implementation order.\nCurious how others building agent systems are handling this boundary: where do you draw the line between what an agent is allowed to propose and what it is allowed to treat as authoritative?",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": "x_post_2095153784913830001",
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": "x_post_2095153784913830001",
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:16:03.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:17:32.971711Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent"
+    ]
+  },
+  {
+    "event_id": "x_reply_2095153690319700257",
+    "platform": "x",
+    "event_type": "reply",
+    "source": {
+      "source_id": "2095153690319700257",
+      "url": "https://x.com/theneuralduck/status/2095153690319700257",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "theneuralduck",
+      "username": "theneuralduck",
+      "display_name": "duck",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2065009858982891520/emb9WS1g_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Ive to use Python for work and only after looking into the internals and exploring c/c++ extensions in pytorch, projects like tinygrad I saw how much I didnt know and how much I missed by not learning C/C++\nEven the importance of types wasn't obvious until I worked on a big proj",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": "x_post_2095153690319700257",
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": "x_post_2095153690319700257",
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:15:40.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:17:40.782822Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent"
+    ]
+  },
+  {
+    "event_id": "x_reply_2095153387402596674",
+    "platform": "x",
+    "event_type": "reply",
+    "source": {
+      "source_id": "2095153387402596674",
+      "url": "https://x.com/epoch_obsidian/status/2095153387402596674",
+      "collector": "x_playwright"
+    },
+    "author": {
+      "user_id": "epoch_obsidian",
+      "username": "epoch_obsidian",
+      "display_name": "The Last Bull",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2042865857446187014/kZ7D7rJH_normal.jpg",
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "tools. hooks. evals. streaming. python + typescript. oss\n\ntry today",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": "x_post_2095153387402596674",
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": "x_post_2095153387402596674",
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T14:14:28.000Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T14:17:49.583329Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent"
     ]
   }
 ]

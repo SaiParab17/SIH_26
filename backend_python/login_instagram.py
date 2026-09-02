@@ -1,77 +1,91 @@
 """
-Instagram Login Helper Script
-Launches headful Camoufox browser with persistent profile for 3 minutes
-allowing the user to log in and save session cookies locally.
+Interactive Instagram 3-Minute Login Setup Script.
+Launches Playwright Chromium with persistent user profile in 'user_data/instagram'.
+Gives the user 3 minutes to log into Instagram and saves cookies/session automatically.
 """
 
 import os
 import sys
 import time
 import asyncio
-import logging
+
+# Ensure UTF-8 output encoding for Windows terminals
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 from playwright.async_api import async_playwright
-from camoufox.async_api import AsyncNewBrowser
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
-logger = logging.getLogger("instagram_login")
-
-USER_DATA_DIR = os.path.join(os.path.dirname(__file__), "user_data", "instagram")
-os.makedirs(USER_DATA_DIR, exist_ok=True)
+USER_DATA_DIR = os.path.join(os.path.dirname(__file__), "user_data", "shared_chrome")
 
 async def main():
-    print("\n" + "="*70)
-    print(" INSTAGRAM CAMOUFOX LOGIN SESSION (3 MINUTES)")
-    print("="*70)
-    print(f"Profile Storage Path: {USER_DATA_DIR}")
-    print("Opening headful Camoufox browser to Instagram Login page...")
-    print("Please enter your Instagram credentials and log in.")
-    print("All session cookies and state will be saved locally for automated scraping.")
-    print("="*70 + "\n")
+    print("=" * 70)
+    print("[Instagram Login Setup] Playwright Chromium Session Setup")
+    print("=" * 70)
+    print(f"Profile Storage Directory: {USER_DATA_DIR}")
+    print("Launching visible Chromium browser... Please complete your Instagram login.")
+    print("=" * 70)
+
+    os.makedirs(USER_DATA_DIR, exist_ok=True)
 
     async with async_playwright() as p:
-        # Launch headful browser with persistent profile directory
-        try:
-            context = await p.firefox.launch_persistent_context(
-                user_data_dir=USER_DATA_DIR,
-                headless=False,
-                viewport={"width": 1280, "height": 800},
-                args=["--no-sandbox"]
-            )
-        except Exception:
-            # Fallback to Camoufox engine
-            context = await AsyncNewBrowser(
-                p,
-                headless=False,
-                persistent_context=True,
-                user_data_dir=USER_DATA_DIR
-            )
+        context = await p.chromium.launch_persistent_context(
+            user_data_dir=USER_DATA_DIR,
+            headless=False,
+            viewport={"width": 1280, "height": 800},
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+            locale="en-US",
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--disable-infobars",
+                "--no-sandbox",
+                "--disable-setuid-sandbox",
+            ],
+            ignore_default_args=["--enable-automation"],
+        )
+
+        await context.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+            window.chrome = { runtime: {} };
+            Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+            Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
+        """)
 
         page = context.pages[0] if context.pages else await context.new_page()
-        page.set_default_timeout(60000)
-
-        logger.info("Navigating to Instagram Login page: https://www.instagram.com/accounts/login/")
         await page.goto("https://www.instagram.com/accounts/login/", wait_until="domcontentloaded")
 
-        duration_seconds = 180  # 3 minutes
+        total_seconds = 600
         start_time = time.time()
+
+        print("\n[INFO] You have 10 minutes (600 seconds) to receive your code and log in on the opened Chromium window...")
 
         while True:
             elapsed = int(time.time() - start_time)
-            remaining = duration_seconds - elapsed
+            remaining = total_seconds - elapsed
+
             if remaining <= 0:
                 break
 
-            mins = remaining // 60
-            secs = remaining % 60
-            print(f"\rTime remaining to log in & save cookies: {mins:02d}m {secs:02d}s (Keep browser open)...", end="", flush=True)
+            current_url = page.url.lower()
+            if (
+                "instagram.com" in current_url
+                and "login" not in current_url
+                and "emailsignup" not in current_url
+                and "recaptcha" not in current_url
+                and "auth_platform" not in current_url
+                and "challenge" not in current_url
+                and "password" not in current_url
+                and "reset" not in current_url
+            ):
+                print(f"\n[SUCCESS] Detected logged-in Instagram session! (URL: {page.url[:60]})")
+                break
+
+            sys.stdout.write(f"\r[TIMER] Time remaining: {remaining}s | Page: {current_url[:55]}...   ")
+            sys.stdout.flush()
             await asyncio.sleep(2)
 
-        print("\n\n" + "="*70)
-        print(" SUCCESS: 3 minutes elapsed. Saving Instagram cookies and profile...")
-        print("="*70 + "\n")
-
+        print("\n\n[INFO] Saving persistent Instagram login session cookies...")
         await context.close()
-        logger.info("Instagram login profile saved successfully!")
+        print("[SUCCESS] Done! Instagram session saved to 'user_data/instagram'. Future scraping will use this login!")
 
 if __name__ == "__main__":
     asyncio.run(main())
