@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import { ClayCard } from '../components/ui/ClayCard';
 import { PlatformBadge } from '../components/ui/PlatformBadge';
-import { Database, Play, CheckCircle2, Sliders, Info, Clock, Layers } from 'lucide-react';
+import { Database, Play, CheckCircle2, Sliders, Info, Clock, Layers, Loader2, AlertCircle } from 'lucide-react';
 import { INITIAL_PLATFORMS } from '../services/mockData';
+import { ingestYouTube, checkHealth, type YouTubeIngestionResult } from '../services/youtubeApi';
+import {
+  triggerXCollection,
+  triggerFacebookCollection,
+  triggerInstagramCollection,
+  triggerMultiCollection,
+  pollJobUntilComplete,
+  checkPythonHealth,
+  type PythonJobResponse,
+} from '../services/pythonApi';
 
 interface CollectionSetupPageProps {
   onStartCollection: () => void;
@@ -10,13 +20,169 @@ interface CollectionSetupPageProps {
 
 export const CollectionSetupPage: React.FC<CollectionSetupPageProps> = ({ onStartCollection }) => {
   const [platforms, setPlatforms] = useState(INITIAL_PLATFORMS);
-  const [topicQuery, setTopicQuery] = useState('AI Regulation & Social Intelligence');
-  const [hashtags, setHashtags] = useState('#AIRegulation, #AgenticAI, #DataPrivacy');
-  const [mentions, setMentions] = useState('@tech_analyst_raj, @ai_policy_lab');
+  const [topicQuery, setTopicQuery] = useState('SIH 2026');
+  const [hashtags, setHashtags] = useState('#SIH2026, #SmartIndiaHackathon, #InnovateIndia');
+  const [mentions, setMentions] = useState('@mhrd_innovation, @aicte_hq, @sih2026');
   const [timeWindow, setTimeWindow] = useState('24h');
   const [recentPct, setRecentPct] = useState(60);
   const [engagementPct, setEngagementPct] = useState(20);
   const [velocityPct, setVelocityPct] = useState(20);
+  const [visibleBrowser, setVisibleBrowser] = useState(true);
+
+  // Ingestion state
+  const [isIngesting, setIsIngesting] = useState(false);
+  const [currentStep, setCurrentStep] = useState<string>('');
+  const [ingestionResult, setIngestionResult] = useState<YouTubeIngestionResult | null>(null);
+  const [xJobResult, setXJobResult] = useState<PythonJobResponse | null>(null);
+  const [fbJobResult, setFbJobResult] = useState<PythonJobResponse | null>(null);
+  const [instaJobResult, setInstaJobResult] = useState<PythonJobResponse | null>(null);
+  const [ingestionError, setIngestionError] = useState<string | null>(null);
+
+  const handleLaunchCollection = async () => {
+    setIsIngesting(true);
+    setIngestionResult(null);
+    setXJobResult(null);
+    setFbJobResult(null);
+    setInstaJobResult(null);
+    setIngestionError(null);
+    setCurrentStep('');
+
+    try {
+      // 1. Check connectivity
+      setCurrentStep('Checking backend connectivity...');
+      const [nodeOnline, pythonOnline] = await Promise.all([checkHealth(), checkPythonHealth()]);
+
+      if (!nodeOnline && !pythonOnline) {
+        setIngestionError('Neither backend server is accessible. Ensure both servers are running.');
+        return;
+      }
+
+      // 2. YouTube Node backend ingestion (ONLY if YouTube checkbox/platform is ENABLED)
+      const ytPlatform = platforms.find(p => p.id === 'youtube');
+      if (nodeOnline && ytPlatform && ytPlatform.status !== 'disabled') {
+        setCurrentStep('Ingesting YouTube videos & comments...');
+        const maxResults = Math.min(Math.ceil((ytPlatform.targetItems ?? 500) / 20), 25);
+
+        try {
+          const result = await ingestYouTube({
+            query: topicQuery,
+            maxResults,
+            maxCommentsPerVideo: 20,
+          });
+
+          setIngestionResult(result);
+        } catch (ytErr) {
+          const msg = ytErr instanceof Error ? ytErr.message : 'YouTube ingestion failed';
+          setIngestionError(`YouTube: ${msg}`);
+        }
+      }
+
+      // 3. X, Facebook & Instagram Python FastAPI collector ingestion
+      if (pythonOnline) {
+        const xPlatform = platforms.find(p => p.id === 'x');
+        const fbPlatform = platforms.find(p => p.id === 'facebook');
+        const instaPlatform = platforms.find(p => p.id === 'instagram');
+
+        const isFbEnabled = fbPlatform && fbPlatform.status !== 'disabled';
+        const isInstaEnabled = instaPlatform && instaPlatform.status !== 'disabled';
+
+        // A. X Scraping
+        if (xPlatform && xPlatform.status !== 'disabled') {
+          setCurrentStep('Starting X (Twitter) live scraping job...');
+          try {
+            const xJob = await triggerXCollection({
+              query: topicQuery,
+              target_posts: Math.min(xPlatform.targetItems, 20),
+              max_pages: 10,
+              comments_per_post: 5,
+              posts_per_platform: 5,
+              headless: !visibleBrowser,
+            }, false);
+            setXJobResult(xJob);
+
+            await pollJobUntilComplete(xJob.job_id, (st) => {
+              if (st.message) setCurrentStep(`[X Twitter] ${st.message}`);
+            });
+          } catch (xErr) {
+            console.warn('X live collection error:', xErr);
+          }
+        }
+
+        // B. Multi-Platform Sequential Single Browser Session (Facebook ➔ Instagram keeping Camoufox open!)
+        if (isFbEnabled && isInstaEnabled) {
+          setCurrentStep('Launching single Camoufox session for Facebook & Instagram...');
+          try {
+            const multiJob = await triggerMultiCollection(['facebook', 'instagram'], {
+              query: topicQuery,
+              target_posts: Math.min(fbPlatform.targetItems, 20),
+              max_pages: 10,
+              comments_per_post: 5,
+              posts_per_platform: 5,
+              headless: !visibleBrowser,
+            }, false);
+
+            setFbJobResult(multiJob);
+            setInstaJobResult(multiJob);
+
+            await pollJobUntilComplete(multiJob.job_id, (st) => {
+              if (st.message) setCurrentStep(`[Facebook + Instagram] ${st.message}`);
+            });
+          } catch (multiErr) {
+            console.warn('Multi-platform Facebook/Instagram collection error:', multiErr);
+          }
+        } else {
+          // Individual Facebook Scraping
+          if (isFbEnabled) {
+            setCurrentStep('Starting Facebook live scraping job...');
+            try {
+              const fbJob = await triggerFacebookCollection({
+                query: topicQuery,
+                target_posts: Math.min(fbPlatform.targetItems, 20),
+                max_pages: 10,
+                comments_per_post: 5,
+                posts_per_platform: 5,
+                headless: !visibleBrowser,
+              }, false);
+              setFbJobResult(fbJob);
+
+              await pollJobUntilComplete(fbJob.job_id, (st) => {
+                if (st.message) setCurrentStep(`[Facebook] ${st.message}`);
+              });
+            } catch (fbErr) {
+              console.warn('Facebook live collection error:', fbErr);
+            }
+          }
+
+          // Individual Instagram Scraping
+          if (isInstaEnabled) {
+            setCurrentStep('Starting Instagram live scraping job...');
+            try {
+              const instaJob = await triggerInstagramCollection({
+                query: topicQuery,
+                target_posts: Math.min(instaPlatform.targetItems, 15),
+                max_pages: 10,
+                comments_per_post: 5,
+                posts_per_platform: 5,
+                headless: !visibleBrowser,
+              }, false);
+              setInstaJobResult(instaJob);
+
+              await pollJobUntilComplete(instaJob.job_id, (st) => {
+                if (st.message) setCurrentStep(`[Instagram] ${st.message}`);
+              });
+            } catch (instaErr) {
+              console.warn('Instagram live collection error:', instaErr);
+            }
+          }
+        }
+      }
+    } catch (err) {
+      setIngestionError(err instanceof Error ? err.message : 'Live collection pipeline failed unexpectedly');
+    } finally {
+      setCurrentStep('');
+      setIsIngesting(false);
+    }
+  };
 
   const handleTargetChange = (id: string, newTarget: number) => {
     setPlatforms(prev =>
@@ -50,11 +216,21 @@ export const CollectionSetupPage: React.FC<CollectionSetupPageProps> = ({ onStar
         </div>
 
         <button
-          onClick={onStartCollection}
-          className="clay-button text-sm px-5 py-2.5 flex items-center gap-2"
+          onClick={handleLaunchCollection}
+          disabled={isIngesting}
+          className="clay-button text-sm px-5 py-2.5 flex items-center gap-2 disabled:opacity-60"
         >
-          <Play className="w-4 h-4 fill-current" />
-          <span>Launch Collection Pipeline</span>
+          {isIngesting ? (
+            <>
+              <Loader2 className="w-4 h-4 animate-spin" />
+              <span>{currentStep || 'Launching...'}</span>
+            </>
+          ) : (
+            <>
+              <Play className="w-4 h-4 fill-current" />
+              <span>Launch Collection Pipeline</span>
+            </>
+          )}
         </button>
       </div>
 
@@ -70,6 +246,85 @@ export const CollectionSetupPage: React.FC<CollectionSetupPageProps> = ({ onStar
           </p>
         </div>
       </div>
+
+      {/* Ingestion Result Banners */}
+      {ingestionResult && (
+        <div className={`p-4 rounded-lg border flex items-start gap-3 text-xs ${
+          ingestionResult.success
+            ? 'bg-[#4C8768]/10 border-[#4C8768]/30'
+            : 'bg-[#C15D5D]/10 border-[#C15D5D]/30'
+        }`}>
+          {ingestionResult.success ? (
+            <CheckCircle2 className="w-4 h-4 text-[#4C8768] shrink-0 mt-0.5" />
+          ) : (
+            <AlertCircle className="w-4 h-4 text-[#C15D5D] shrink-0 mt-0.5" />
+          )}
+          <div className="flex-1">
+            <span className="font-mono font-bold text-[#171717] block mb-1">
+              YouTube Ingestion Complete — "{ingestionResult.query}"
+            </span>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-[11px] font-mono text-[#171717]/80">
+              <span>📹 Videos: <strong>{ingestionResult.videosProcessed}</strong></span>
+              <span>💬 Comments: <strong>{ingestionResult.commentsCollected}</strong></span>
+              <span>💾 Stored: <strong>{ingestionResult.totalEventsStored}</strong></span>
+              <span>🔄 Duplicates: <strong>{ingestionResult.duplicatesSkipped}</strong></span>
+            </div>
+            <span className="text-[10px] text-[#6E6A62] mt-1 block">
+              Completed in {ingestionResult.durationMs}ms
+            </span>
+          </div>
+        </div>
+      )}
+
+      {/* X Job Banner */}
+      {xJobResult && (
+        <div className="p-4 bg-[#1DA1F2]/10 border border-[#1DA1F2]/30 rounded-lg flex items-start gap-3 text-xs">
+          <CheckCircle2 className="w-4 h-4 text-[#1DA1F2] shrink-0 mt-0.5" />
+          <div className="flex-1">
+            <span className="font-mono font-bold text-[#171717] block mb-0.5">
+              🐦 X (Twitter) Live Scraping Finished — Job ID: {xJobResult.job_id}
+            </span>
+            <p className="text-[11px] text-[#171717]/80">{xJobResult.message}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Facebook Job Banner */}
+      {fbJobResult && (
+        <div className="p-4 bg-[#1877F2]/10 border border-[#1877F2]/30 rounded-lg flex items-start gap-3 text-xs">
+          <CheckCircle2 className="w-4 h-4 text-[#1877F2] shrink-0 mt-0.5" />
+          <div className="flex-1">
+            <span className="font-mono font-bold text-[#171717] block mb-0.5">
+              📘 Facebook Live Scraping Finished — Job ID: {fbJobResult.job_id}
+            </span>
+            <p className="text-[11px] text-[#171717]/80">{fbJobResult.message}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Instagram Job Banner */}
+      {instaJobResult && (
+        <div className="p-4 bg-[#E1306C]/10 border border-[#E1306C]/30 rounded-lg flex items-start gap-3 text-xs">
+          <CheckCircle2 className="w-4 h-4 text-[#E1306C] shrink-0 mt-0.5" />
+          <div className="flex-1">
+            <span className="font-mono font-bold text-[#171717] block mb-0.5">
+              📸 Instagram Live Scraping Finished — Job ID: {instaJobResult.job_id}
+            </span>
+            <p className="text-[11px] text-[#171717]/80">{instaJobResult.message}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Ingestion Error Banner */}
+      {ingestionError && (
+        <div className="bg-[#C15D5D]/10 border border-[#C15D5D]/30 p-4 rounded-lg flex items-start gap-3 text-xs">
+          <AlertCircle className="w-4 h-4 text-[#C15D5D] shrink-0 mt-0.5" />
+          <div>
+            <span className="font-mono font-bold text-[#C15D5D] block mb-0.5">Ingestion Error</span>
+            <p className="text-[#171717]/80">{ingestionError}</p>
+          </div>
+        </div>
+      )}
 
       {/* Query & Topic Configuration */}
       <ClayCard className="p-6 bg-[#FDF9F0]">
@@ -133,6 +388,31 @@ export const CollectionSetupPage: React.FC<CollectionSetupPageProps> = ({ onStar
               <option value="30d">Last 30 Days</option>
             </select>
           </div>
+        </div>
+
+        {/* Live Browser Launch Control Toggle */}
+        <div className="mt-4 pt-4 border-t border-[#D8D3C8] flex items-center justify-between bg-[#EAE6DD] p-3 rounded-lg">
+          <div>
+            <span className="font-heading font-bold text-xs text-[#171717] flex items-center gap-1.5">
+              🌐 Live Interactive Browser Launch (Headful Mode)
+              <span className="bg-[#4C8768]/15 text-[#4C8768] text-[10px] font-mono px-1.5 py-0.5 rounded font-bold">
+                ACTIVE
+              </span>
+            </span>
+            <p className="text-[11px] text-[#6E6A62] mt-0.5">
+              Automatically opens a visible browser window (Camoufox / Playwright) on your screen to execute live searching, scrolling, and comment scraping.
+            </p>
+          </div>
+
+          <label className="relative inline-flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              checked={visibleBrowser}
+              onChange={e => setVisibleBrowser(e.target.checked)}
+              className="sr-only peer"
+            />
+            <div className="w-11 h-6 bg-[#D8D3C8] peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#3157D5]"></div>
+          </label>
         </div>
       </ClayCard>
 

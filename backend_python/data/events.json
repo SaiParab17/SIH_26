@@ -1,0 +1,1683 @@
+[
+  {
+    "event_id": "fb_post_fb_3305849426",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "fb_3305849426",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=fb_3305849426",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "officers_online_academy_view_story",
+      "username": "officers_online_academy_view_story",
+      "display_name": "Officers Online Academy, view story",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "महाराष्ट्र सरकार तर्फे विदेश शिक्षण घेण्यासाठी OBC स्कॉलरशिप 2 Cr रु पर्यत स्कॉलरशिप मध्ये कव्हर होणार abroad education scholarship for Maharashtra government to abroad…  See more",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 5,
+      "shares": 3,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:33:10.802511Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:33:10.802590Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "fb_post_fb_1332977414",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "fb_1332977414",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=fb_1332977414",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "anees_kutty_and_2_others_follow",
+      "username": "anees_kutty_and_2_others_follow",
+      "display_name": "Anees Kutty and 2 others  · Follow",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Everything You Need to Know About the Erasmus Mundus Scholarship!  D— at  Anees Classes for Defence Competitive Exams .…  See more",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 4,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:33:15.853711Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:33:15.853825Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "fb_post_965549928701699",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "965549928701699",
+      "url": "https://www.facebook.com/photo/?fbid=965549928701699&set=pcb.965550402034985",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "podar_international_school_shirur",
+      "username": "podar_international_school_shirur",
+      "display_name": "Podar International School - Shirur",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Pre-Secondary Scholarship Examination  P…  See more",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 20,
+      "shares": 2,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:33:21.074506Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:33:21.074611Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "fb_post_fb_880612003",
+    "platform": "facebook",
+    "event_type": "post",
+    "source": {
+      "source_id": "fb_880612003",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=fb_880612003",
+      "collector": "facebook_playwright"
+    },
+    "author": {
+      "user_id": "lila_poonawalla_foundation_lpf",
+      "username": "lila_poonawalla_foundation_lpf",
+      "display_name": "Lila Poonawalla Foundation - LPF",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Every scholarship awarded is more than financial support; it is an investment in a girl's future.…  See more",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 2,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:33:43.510795Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:33:43.510935Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_1865531364",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_1865531364",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Reel",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:36.978002Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:36.993810Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_1426226663",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_1426226663",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "या सर्व Scholarship ची माहिती आपल्या Youtube चॅनल ला आहे (link bio मधे आहे ) \n\n#scholarships #maharashtra #study",
+      "language": "en",
+      "hashtags": [
+        "#study",
+        "#maharashtra",
+        "#scholarships"
+      ],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.082344Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.082511Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_4115202134",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_4115202134",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "🎓 SBI Platinum Jubilee Asha Scholarship 2026–27\n🚨 Scholarship Alert!\nApplications are now open for the SBI Platinum Jubilee Asha Scholarship 2026–27. Financial assistance is available for eligible students from Class 9 to postgraduate studies, including IITs, IIMs, MBBS, and overseas education.\n📅 Apply before: 4 September 2026\n🌐 Apply here: https://www.sbiashascholarship.co.in\n📌 Share this with friends who might benefit!\n#Scholarship #SBIAshaScholarship #Education #Students #FinancialAid HigherEducation",
+      "language": "en",
+      "hashtags": [
+        "#sbiashascholarship",
+        "#scholarship",
+        "#education",
+        "#financialaid",
+        "#students"
+      ],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.117204Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.117315Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_2440213991",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_2440213991",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "🎓 Fully Funded Scholarships with Upcoming Deadlines! 🌍\nLooking to study abroad with full financial support? These opportunities cover tuition and offer benefits such as travel support, living allowances, health insurance, and more. 📚✈️\n\n⏰ Deadlines are approaching from August to mid-September 2026 — start preparing your application now!\n\n🔎 Find eligibility, requirements & application details at OYAOP.com\n\n#fullyfunded #scholarships #studyabroad #scholarshipopportunities #opportunity",
+      "language": "en",
+      "hashtags": [
+        "#scholarshipopportunities",
+        "#studyabroad",
+        "#opportunity",
+        "#scholarships",
+        "#fullyfunded"
+      ],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.155010Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.155115Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_3773652387",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_3773652387",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "scholarship, scholarships, scholarship deadlines, upcoming scholarship deadlines",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.229181Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.229292Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_3934255150",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_3934255150",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Sbi platinum jubilee asha scholarship Scheme 2026\nDm or call to apply... 7006672181\nLike and share with others!!!\nall students from class 9th to higher education are eligible \n\nMake sure you have account in SBI Bank\n\n#scholarshipopportunities #scholarship #scholarshipsavailable #scholarshipscheme #scholarships",
+      "language": "en",
+      "hashtags": [
+        "#scholarshipopportunities",
+        "#scholarship",
+        "#scholarships",
+        "#scholarshipscheme",
+        "#scholarshipsavailable"
+      ],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.299566Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.299677Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_3130424325",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_3130424325",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "India Foundation Scholarship 2026 | Get upto rs 75,000",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.370132Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.370230Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_3815809502",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_3815809502",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "TOP 10 SCHOLARSHIPS WITHOUT IELTS\n.\n.\n.\n.\n[ scholarship, scholarships, scholarship deadlines, upcoming scholarship deadlines ]\n.\n.\n.\n.\n#scholarship #scholarships #fullyfundedscholarship #fullyfundedscholarships",
+      "language": "en",
+      "hashtags": [
+        "#fullyfundedscholarships",
+        "#scholarship",
+        "#scholarships",
+        "#fullyfundedscholarship"
+      ],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.482779Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.482922Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_432832919",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_432832919",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Most families are not missing scholarship money because their child is unqualified.\n\nThey’re missing it because nobody told them where to look.\n\nThousands of dollars in scholarships are available for high school students, college students, women in technology, mothers returning to school and families who simply need financial support.\n\nBut here’s the truth:\n\nYou cannot apply for an opportunity you never knew existed.\n\nSave this list. Research every scholarship. Confirm the requirements and deadlines on each organization’s official website—and start applying early.\n\nDo not automatically count yourself out.\n\nLet the scholarship committee tell you no. Never reject yourself before submitting the application.\n\nSHARE this with a student, parent, teacher, coach or counselor. One share could help change someone’s entire future.\n\nComment “SCHOLARSHIP” if you want me to send you where you can find more opportunities like these, for free. \n\nAnd no, I don’t charge or try and upsell you in your DM’s either! \n\nLove you guys. \n\n- Coach @gerald_smiley",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [
+        "@gerald_smiley"
+      ],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": [
+        "@gerald_smiley"
+      ]
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.520202Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.520328Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_2890936456",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_2890936456",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "Scholarships in Canada 2027 | Study in Canada\n\nApply Link: https://brightscholarship.com/scholarships-in-canada-2027/\n\nUniversity: Canadian Universities\nDegree level: Bachelors, Masters, PhD\nScholarship coverage: Fully Funded\nEligible nationality: All Nationalities\nAward country: Canada\nLast date: Vary with University\n\n#BrightScholarship #FullyFunded #Scholarship #Canada #Students",
+      "language": "en",
+      "hashtags": [
+        "#scholarship",
+        "#brightscholarship",
+        "#students",
+        "#canada",
+        "#fullyfunded"
+      ],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.613181Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.613318Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_1574750044",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_1574750044",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "$100,000s in FREE money… and the only thing standing between you and it might be 30 minutes of your time.\n\nEvery year, millions of dollars in scholarships go unclaimed.\n\nNot because students aren’t smart enough.\n\nNot because they aren’t deserving.\n\nBut because they never apply.\n\nToo many students tell themselves:\n\n* “I probably won’t win.”\n* “Someone else is more qualified.”\n* “I’ll do it later.”\n\nThen the deadline passes.\n\nThe students who receive scholarships aren’t always the ones with the highest GPA or the most talent. They’re often the ones who simply took the time to fill out the application.\n\nOver the next couple of days, block off an hour.\n\nTurn off your notifications.\nPut your phone down.\nOpen your laptop.\nApply for every scholarship on this list that you’re eligible for.\n\nOne application could save you thousands of dollars.\n\nEven if it takes you an hour to complete an application and you win a $5,000 scholarship, that’s one of the highest hourly “paychecks” you’ll ever earn.\n\nDon’t let procrastination cost you opportunities that could change your future.\n\nYour future self will never regret applying.\n\nBut you might regret not applying.\n\nSave this post. Share it with a student or parent. Then come back after you’ve submitted your applications and let me know how many you completed.\n\nWhich scholarship are you applying for first?\n\nComment “scholarship” and I’ll send you a list of scholarships and places to look for free money. \n\n#scholarshipopportunities #scholarshipalert #collegemoney #collegescholarships #financialaid",
+      "language": "en",
+      "hashtags": [
+        "#scholarshipopportunities",
+        "#collegemoney",
+        "#collegescholarships",
+        "#financialaid",
+        "#scholarshipalert"
+      ],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.693391Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.693827Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_insta_2151262262",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "insta_2151262262",
+      "url": "https://www.instagram.com/explore/tags/scholarship/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "🇩🇪 Friedrich Ebert Foundation Scholarship in Germany 2026–27\n\nStudy in Germany with financial support through one of the country’s prestigious scholarship programs!\n\n🏛️ Scholarship Provider: Friedrich Ebert Foundation\n📍 Host Country: Germany\n🎓 Study Levels: Bachelor’s, Master’s & Diploma Programs\n🌍 Eligibility: International Students\n\n✨ Scholarship Benefits:\n✅ Monthly stipend of €934\n✅ Health insurance coverage\n✅ Additional child allowance of €160/month\n✅ Opportunity to study at top universities in Germany\n\nDetails link: https://opportunitiespedia.com/friedrich-ebert-foundation-scholarships-2026/\n\n🚀 Don’t miss this scholarship opportunity in Germany!\n\n🔖 #FriedrichEbertFoundation #StudyInGermany #Scholarships2026 #InternationalStudents #OpportunitiesPedia",
+      "language": "en",
+      "hashtags": [
+        "#scholarships2026",
+        "#friedrichebertfoundation",
+        "#studyingermany",
+        "#internationalstudents",
+        "#opportunitiespedia"
+      ],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:37.728774Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:37.728882Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_DcgNmpgIVP9",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "DcgNmpgIVP9",
+      "url": "https://www.instagram.com/p/DcgNmpgIVP9/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "careerwalaa_",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 582,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:45.219853Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:45.220255Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_DcQ8eBNMrln",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "DcQ8eBNMrln",
+      "url": "https://www.instagram.com/p/DcQ8eBNMrln/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "naukarisetu",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 1115,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:51.610197Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:51.610285Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_DbYXupYPNoY",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "DbYXupYPNoY",
+      "url": "https://www.instagram.com/p/DbYXupYPNoY/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "srajancareers",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 10,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:35:58.148664Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:35:58.164557Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_DcdlMpRykC0",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "DcdlMpRykC0",
+      "url": "https://www.instagram.com/p/DcdlMpRykC0/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "conrad_k_sangma",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 46332,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:36:05.187522Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:36:05.187618Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_Da5gk1hspBm",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "Da5gk1hspBm",
+      "url": "https://www.instagram.com/p/Da5gk1hspBm/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "nagendrasahu82",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 13510,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:36:12.048354Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:36:12.048448Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_DbnkmB6vC-y",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "DbnkmB6vC-y",
+      "url": "https://www.instagram.com/p/DbnkmB6vC-y/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "rajdigitalworld_official",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 5169,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:36:18.608528Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:36:18.608635Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_DcZA8pMoMRQ",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "DcZA8pMoMRQ",
+      "url": "https://www.instagram.com/p/DcZA8pMoMRQ/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "scholarshipplugcenter",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:36:24.943460Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:36:24.943578Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  },
+  {
+    "event_id": "insta_post_Dbs_7MYvPGD",
+    "platform": "instagram",
+    "event_type": "post",
+    "source": {
+      "source_id": "Dbs_7MYvPGD",
+      "url": "https://www.instagram.com/p/Dbs_7MYvPGD/",
+      "collector": "instagram_camoufox"
+    },
+    "author": {
+      "user_id": "instagram_creator",
+      "username": "instagram_creator",
+      "display_name": "Instagram Creator",
+      "avatarUrl": null,
+      "verified": null,
+      "followers_count": null,
+      "location": null,
+      "bio": null,
+      "inferred_interests": []
+    },
+    "content": {
+      "text": "rohitbabajii",
+      "language": "en",
+      "hashtags": [],
+      "mentions": [],
+      "media": []
+    },
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "views": null
+    },
+    "relationships": {
+      "reply_to": null,
+      "repost_of": null,
+      "quoted_event_id": null,
+      "parent_post_id": null,
+      "mentions": []
+    },
+    "timestamps": {
+      "created_at": "2026-09-02T05:36:31.300136Z",
+      "updated_at": null,
+      "collected_at": "2026-09-02T05:36:31.300228Z"
+    },
+    "analysis": {
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "emotion": {
+        "label": "surprise",
+        "score": 0.0
+      },
+      "stance": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "sarcasm": {
+        "detected": false,
+        "score": 0.0
+      }
+    },
+    "collection_reason": [
+      "recent",
+      "relevant"
+    ]
+  }
+]

@@ -56,15 +56,15 @@ export const TopicExplorerPage: React.FC = () => {
             <div className="grid grid-cols-3 gap-2 text-center text-xs p-2 bg-[#EAE6DD] rounded-lg mb-4">
               <div>
                 <span className="text-[10px] text-[#6E6A62] block">Volume</span>
-                <span className="font-mono font-bold text-[#171717]">{topic.volume.toLocaleString()}</span>
+                <span className="font-mono font-bold text-[#171717]">{(topic?.volume ?? 0).toLocaleString()}</span>
               </div>
               <div>
                 <span className="text-[10px] text-[#4C8768] block">Positive</span>
-                <span className="font-mono font-bold text-[#4C8768]">{topic.sentiment.positive}%</span>
+                <span className="font-mono font-bold text-[#4C8768]">{topic?.sentiment?.positive ?? 0}%</span>
               </div>
               <div>
                 <span className="text-[10px] text-[#C15D5D] block">Negative</span>
-                <span className="font-mono font-bold text-[#C15D5D]">{topic.sentiment.negative}%</span>
+                <span className="font-mono font-bold text-[#C15D5D]">{topic?.sentiment?.negative ?? 0}%</span>
               </div>
             </div>
 

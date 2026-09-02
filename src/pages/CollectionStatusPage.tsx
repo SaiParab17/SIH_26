@@ -11,12 +11,48 @@ interface CollectionStatusPageProps {
 export const CollectionStatusPage: React.FC<CollectionStatusPageProps> = ({ onProceedToDashboard }) => {
   const [pipelineSteps, setPipelineSteps] = useState(MOCK_PIPELINE_STEPS);
   const [isSimulating, setIsSimulating] = useState(true);
+  const [platforms, setPlatforms] = useState(INITIAL_PLATFORMS);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsSimulating(false);
     }, 2000);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const { checkPythonHealth, fetchPythonEvents } = await import('../services/pythonApi');
+        const pyOnline = await checkPythonHealth();
+        if (pyOnline) {
+          const pyRes = await fetchPythonEvents({ limit: 5000 });
+          const fbCount = pyRes.events.filter(e => e.platform === 'facebook').length;
+          const xCount = pyRes.events.filter(e => e.platform === 'x').length;
+
+          setPlatforms(prev => prev.map(p => {
+            if (p.id === 'facebook') {
+              return {
+                ...p,
+                validUniqueCount: fbCount,
+                completionPercentage: Math.min(100, (fbCount / p.targetItems) * 100)
+              };
+            }
+            if (p.id === 'x') {
+              return {
+                ...p,
+                validUniqueCount: xCount,
+                completionPercentage: Math.min(100, (xCount / p.targetItems) * 100)
+              };
+            }
+            return p;
+          }));
+        }
+      } catch (e) {
+        console.warn('Could not fetch python events', e);
+      }
+    };
+    fetchStats();
   }, []);
 
   return (
@@ -42,7 +78,7 @@ export const CollectionStatusPage: React.FC<CollectionStatusPageProps> = ({ onPr
 
       {/* Per-Platform Ingestion Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {INITIAL_PLATFORMS.map(platform => (
+        {platforms.map(platform => (
           <ClayCard key={platform.id} className="p-5 bg-[#FDF9F0]">
             <div className="flex items-center justify-between mb-3 border-b border-[#D8D3C8] pb-2">
               <PlatformBadge platform={platform.id} size="md" />

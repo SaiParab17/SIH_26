@@ -31,7 +31,7 @@ export const EvidenceDrawer: React.FC<EvidenceDrawerProps> = ({ isOpen, onClose,
           <div>
             <div className="flex items-center gap-2 mb-1">
               <PlatformBadge platform={event.platform} />
-              <ConfidenceBadge score={event.analysis.sentiment.score} />
+              <ConfidenceBadge score={event.analysis?.sentiment?.score ?? 0.8} />
             </div>
             <h2 className="font-heading font-bold text-base text-[#171717]">
               Evidence Inspection: {event.event_id}
@@ -76,10 +76,10 @@ export const EvidenceDrawer: React.FC<EvidenceDrawerProps> = ({ isOpen, onClose,
                   Public Social Event Text
                 </h3>
                 <p className="text-sm text-[#171717] leading-relaxed font-sans font-medium mb-3">
-                  "{event.content.text}"
+                  "{event.content?.text || ''}"
                 </p>
                 <div className="flex flex-wrap items-center gap-2 text-xs">
-                  {event.content.hashtags.map((tag) => (
+                  {(event.content?.hashtags || []).map((tag) => (
                     <span key={tag} className="font-mono text-[#3157D5] bg-[#3157D5]/10 px-2 py-0.5 rounded">
                       #{tag}
                     </span>
@@ -92,28 +92,28 @@ export const EvidenceDrawer: React.FC<EvidenceDrawerProps> = ({ isOpen, onClose,
                 <ClayCard className="p-3">
                   <span className="text-[11px] font-mono text-[#6E6A62] block mb-1">Sentiment</span>
                   <span className="font-heading font-bold text-sm text-[#171717] capitalize">
-                    {event.analysis.sentiment.label} ({Math.round(event.analysis.sentiment.score * 100)}%)
+                    {event.analysis?.sentiment?.label ?? 'neutral'} ({Math.round((event.analysis?.sentiment?.score ?? 0) * 100)}%)
                   </span>
                 </ClayCard>
 
                 <ClayCard className="p-3">
                   <span className="text-[11px] font-mono text-[#6E6A62] block mb-1">Emotion</span>
                   <span className="font-heading font-bold text-sm text-[#171717] capitalize">
-                    {event.analysis.emotion.label} ({Math.round(event.analysis.emotion.score * 100)}%)
+                    {event.analysis?.emotion?.label ?? 'surprise'} ({Math.round((event.analysis?.emotion?.score ?? 0) * 100)}%)
                   </span>
                 </ClayCard>
 
                 <ClayCard className="p-3">
                   <span className="text-[11px] font-mono text-[#6E6A62] block mb-1">Stance</span>
                   <span className="font-heading font-bold text-sm text-[#171717] capitalize">
-                    {event.analysis.stance.label} ({Math.round(event.analysis.stance.score * 100)}%)
+                    {event.analysis?.stance?.label ?? 'neutral'} ({Math.round((event.analysis?.stance?.score ?? 0) * 100)}%)
                   </span>
                 </ClayCard>
 
                 <ClayCard className="p-3">
                   <span className="text-[11px] font-mono text-[#6E6A62] block mb-1">Sarcasm Detected</span>
                   <span className="font-heading font-bold text-sm text-[#171717]">
-                    {event.analysis.sarcasm.detected ? 'Yes (Confidence: High)' : 'No'}
+                    {event.analysis?.sarcasm?.detected ? 'Yes (Confidence: High)' : 'No'}
                   </span>
                 </ClayCard>
               </div>
@@ -126,23 +126,23 @@ export const EvidenceDrawer: React.FC<EvidenceDrawerProps> = ({ isOpen, onClose,
                 <div className="space-y-2 text-xs font-mono">
                   <div className="flex justify-between border-b border-[#D8D3C8]/60 pb-1">
                     <span className="text-[#6E6A62]">Author Username:</span>
-                    <span className="font-bold text-[#171717]">@{event.author.username}</span>
+                    <span className="font-bold text-[#171717]">@{event.author?.username || 'unknown'}</span>
                   </div>
                   <div className="flex justify-between border-b border-[#D8D3C8]/60 pb-1">
                     <span className="text-[#6E6A62]">Display Name:</span>
-                    <span className="text-[#171717]">{event.author.display_name}</span>
+                    <span className="text-[#171717]">{event.author?.display_name || 'Anonymous'}</span>
                   </div>
                   <div className="flex justify-between border-b border-[#D8D3C8]/60 pb-1">
                     <span className="text-[#6E6A62]">Collector Engine:</span>
-                    <span className="text-[#3157D5]">{event.source.collector}</span>
+                    <span className="text-[#3157D5]">{event.source?.collector || 'unknown'}</span>
                   </div>
                   <div className="flex justify-between border-b border-[#D8D3C8]/60 pb-1">
                     <span className="text-[#6E6A62]">Created Timestamp:</span>
-                    <span className="text-[#171717]">{event.timestamps.created_at}</span>
+                    <span className="text-[#171717]">{event.timestamps?.created_at || 'N/A'}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#6E6A62]">Collected Timestamp:</span>
-                    <span className="text-[#171717]">{event.timestamps.collected_at}</span>
+                    <span className="text-[#171717]">{event.timestamps?.collected_at || 'N/A'}</span>
                   </div>
                 </div>
               </ClayCard>

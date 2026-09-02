@@ -61,7 +61,7 @@ export const INITIAL_PLATFORMS: PlatformConfig[] = [
     color: '#E1306C',
     bgColor: '#FDF0F5',
     iconName: 'Instagram',
-    status: 'partially_configured',
+    status: 'connected',
     targetItems: 1000,
     validUniqueCount: 710,
     duplicateCount: 65,

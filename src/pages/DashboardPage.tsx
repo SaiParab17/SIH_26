@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ClayCard } from '../components/ui/ClayCard';
 import { MetricCard } from '../components/ui/MetricCard';
 import { PlatformBadge } from '../components/ui/PlatformBadge';
 import { ConfidenceBadge } from '../components/ui/ConfidenceBadge';
 import { PartialResultBanner } from '../components/ui/PartialResultBanner';
 import { MOCK_SENTIMENT, MOCK_TRENDS, INITIAL_PLATFORMS, MOCK_TOPICS } from '../services/mockData';
-import { Activity, TrendingUp, Users, MessageSquare, Layers, ArrowUpRight, ShieldAlert } from 'lucide-react';
+import { fetchYouTubeStats, checkHealth } from '../services/youtubeApi';
+import { Activity, TrendingUp, Users, MessageSquare, Layers, ArrowUpRight, ShieldAlert, Play } from 'lucide-react';
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, PieChart, Pie, Cell } from 'recharts';
 
 interface DashboardPageProps {
@@ -15,10 +16,85 @@ interface DashboardPageProps {
 export const DashboardPage: React.FC<DashboardPageProps> = ({ onNavigate }) => {
   const pieColors = ['#4C8768', '#C15D5D', '#6E6A62'];
 
+  // Real YouTube and Python backend stats
+  const [ytStats, setYtStats] = useState<{ totalEvents: number; posts: number; comments: number } | null>(null);
+  const [pyStats, setPyStats] = useState<{ xEvents: number; fbEvents: number; instaEvents: number } | null>(null);
+  const [backendOnline, setBackendOnline] = useState(false);
+  const [pythonOnline, setPythonOnline] = useState(false);
+
+  useEffect(() => {
+    const loadStats = async () => {
+      const online = await checkHealth();
+      setBackendOnline(online);
+      if (online) {
+        try {
+          const stats = await fetchYouTubeStats();
+          setYtStats({
+            totalEvents: stats.totalEvents,
+            posts: stats.eventsByType.posts,
+            comments: stats.eventsByType.comments,
+          });
+        } catch (err) {
+          console.error('Failed to fetch YouTube stats:', err);
+        }
+      }
+
+      // Check python backend and fetch events
+      try {
+        const { checkPythonHealth, fetchPythonEvents } = await import('../services/pythonApi');
+        const pyOnline = await checkPythonHealth();
+        setPythonOnline(pyOnline);
+        if (pyOnline) {
+          const pyRes = await fetchPythonEvents({ limit: 5000 });
+          const xCount = pyRes.events.filter(e => e.platform === 'x').length;
+          const fbCount = pyRes.events.filter(e => e.platform === 'facebook').length;
+          const instaCount = pyRes.events.filter(e => e.platform === 'instagram').length;
+          setPyStats({ xEvents: xCount, fbEvents: fbCount, instaEvents: instaCount });
+        }
+      } catch (err) {
+        console.error('Failed to fetch Python stats:', err);
+      }
+    };
+    loadStats();
+  }, []);
+
+  // Merge real YouTube and Python stats into platform data
+  const platforms = INITIAL_PLATFORMS.map(p => {
+    if (p.id === 'youtube' && ytStats) {
+      return {
+        ...p,
+        validUniqueCount: ytStats.totalEvents,
+        completionPercentage: Math.min(100, (ytStats.totalEvents / p.targetItems) * 100),
+      };
+    }
+    if (p.id === 'x' && pyStats) {
+      return {
+        ...p,
+        validUniqueCount: pyStats.xEvents,
+        completionPercentage: Math.min(100, (pyStats.xEvents / p.targetItems) * 100),
+      };
+    }
+    if (p.id === 'facebook' && pyStats) {
+      return {
+        ...p,
+        validUniqueCount: pyStats.fbEvents,
+        completionPercentage: Math.min(100, (pyStats.fbEvents / p.targetItems) * 100),
+      };
+    }
+    if (p.id === 'instagram' && pyStats) {
+      return {
+        ...p,
+        validUniqueCount: pyStats.instaEvents,
+        completionPercentage: Math.min(100, (pyStats.instaEvents / p.targetItems) * 100),
+      };
+    }
+    return p;
+  });
+
   const sentimentData = [
-    { name: 'Positive', value: MOCK_SENTIMENT.positive },
-    { name: 'Negative', value: MOCK_SENTIMENT.negative },
-    { name: 'Neutral', value: MOCK_SENTIMENT.neutral }
+    { name: 'Positive', value: MOCK_SENTIMENT?.positive ?? 46.2 },
+    { name: 'Negative', value: MOCK_SENTIMENT?.negative ?? 32.8 },
+    { name: 'Neutral', value: MOCK_SENTIMENT?.neutral ?? 21.0 }
   ];
 
   return (
@@ -55,7 +131,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onNavigate }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <MetricCard
           label="Total Social Events"
-          value={182430}
+          value={182430 + (ytStats?.totalEvents ?? 0) + (pyStats?.xEvents ?? 0) + (pyStats?.fbEvents ?? 0) + (pyStats?.instaEvents ?? 0)}
           changePct={14.2}
           trendDirection="up"
           subtext="Normalized canonical items"
@@ -117,7 +193,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onNavigate }) => {
 
           <div className="h-64 w-full">
             <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={MOCK_SENTIMENT.timeline}>
+              <AreaChart data={MOCK_SENTIMENT?.timeline ?? []}>
                 <defs>
                   <linearGradient id="colorPos" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="5%" stopColor="#4C8768" stopOpacity={0.4} />
@@ -263,7 +339,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onNavigate }) => {
           </div>
 
           <div className="space-y-3">
-            {INITIAL_PLATFORMS.map((platform) => (
+            {platforms.map((platform) => (
               <div key={platform.id} className="p-3 bg-[#EAE6DD] rounded-lg border border-[#D8D3C8] flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <PlatformBadge platform={platform.id} />

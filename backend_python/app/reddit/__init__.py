@@ -1,0 +1,1 @@
+"""Reddit Web Collector Package."""

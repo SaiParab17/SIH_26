@@ -1,0 +1,25 @@
+{
+  "name": "socialscope-server",
+  "version": "1.0.0",
+  "description": "SocialScope YouTube Data Ingestion Backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "googleapis": "^148.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.16.3",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.3"
+  }
+}
