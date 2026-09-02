@@ -86,29 +86,7 @@ export const CollectionSetupPage: React.FC<CollectionSetupPageProps> = ({ onStar
         const isFbEnabled = fbPlatform && fbPlatform.status !== 'disabled';
         const isInstaEnabled = instaPlatform && instaPlatform.status !== 'disabled';
 
-        // A. X Scraping
-        if (xPlatform && xPlatform.status !== 'disabled') {
-          setCurrentStep('Starting X (Twitter) live scraping job...');
-          try {
-            const xJob = await triggerXCollection({
-              query: topicQuery,
-              target_posts: Math.min(xPlatform.targetItems, 20),
-              max_pages: 10,
-              comments_per_post: 5,
-              posts_per_platform: 5,
-              headless: !visibleBrowser,
-            }, false);
-            setXJobResult(xJob);
-
-            await pollJobUntilComplete(xJob.job_id, (st) => {
-              if (st.message) setCurrentStep(`[X Twitter] ${st.message}`);
-            });
-          } catch (xErr) {
-            console.warn('X live collection error:', xErr);
-          }
-        }
-
-        // B. Multi-Platform Sequential Single Browser Session (Facebook ➔ Instagram keeping Camoufox open!)
+        // A. Facebook & Instagram Collection (Camoufox)
         if (isFbEnabled && isInstaEnabled) {
           setCurrentStep('Launching single Camoufox session for Facebook & Instagram...');
           try {
@@ -173,6 +151,29 @@ export const CollectionSetupPage: React.FC<CollectionSetupPageProps> = ({ onStar
             } catch (instaErr) {
               console.warn('Instagram live collection error:', instaErr);
             }
+          }
+        }
+
+        // B. X (Twitter) Scraping (Runs AFTER Facebook & Instagram finish via Chromium)
+        if (xPlatform && xPlatform.status !== 'disabled') {
+          setCurrentStep('Facebook & Instagram complete. Starting X (Twitter) live scraping via Chromium...');
+          await new Promise((r) => setTimeout(r, 2000));
+          try {
+            const xJob = await triggerXCollection({
+              query: topicQuery,
+              target_posts: Math.min(xPlatform.targetItems, 10),
+              max_pages: 10,
+              comments_per_post: 5,
+              posts_per_platform: 5,
+              headless: !visibleBrowser,
+            }, false);
+            setXJobResult(xJob);
+
+            await pollJobUntilComplete(xJob.job_id, (st) => {
+              if (st.message) setCurrentStep(`[X Twitter] ${st.message}`);
+            });
+          } catch (xErr) {
+            console.warn('X live collection error:', xErr);
           }
         }
       }

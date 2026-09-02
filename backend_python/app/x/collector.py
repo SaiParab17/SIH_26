@@ -25,15 +25,33 @@ class XCollector(BaseSocialCollector):
 
     def __init__(self, headless: bool = True, timeout_ms: int = 30000):
         super().__init__(platform_name="x", headless=headless, timeout_ms=timeout_ms)
-        self.browser_mgr = BrowserManager(headless=headless, use_camoufox=True, timeout_ms=timeout_ms, platform_name="x")
+        self.browser_mgr = BrowserManager(headless=headless, use_camoufox=False, timeout_ms=timeout_ms, platform_name="x")
         self.deduplicator = Deduplicator()
         self.page = None
 
+    def use_existing_session(self, browser_mgr: BrowserManager, page: Any) -> None:
+        """Reuse an already open BrowserManager and page session."""
+        self.browser_mgr = browser_mgr
+        self.page = page
+        self.session_active = True
+        self.is_external_session = True
+
     async def start_session(self) -> None:
-        """Launch browser context."""
-        logger.info("Starting X collector session...")
+        """Launch Chromium browser context if not already active."""
+        if self.session_active and self.page and not self.page.is_closed():
+            return
+        logger.info("Starting X (Twitter) Playwright Chromium collector session...")
         _, self.page = await self.browser_mgr.launch()
         self.session_active = True
+
+    async def close_session(self) -> None:
+        """Close browser session unless shared across multi-platform run."""
+        if getattr(self, "is_external_session", False):
+            logger.info("Skipping X session close (shared active session).")
+            return
+        if self.browser_mgr:
+            await self.browser_mgr.close()
+        self.session_active = False
 
     async def search_or_discover(self, query: str, sort: str = "recent") -> bool:
         """Navigate to X search results using the search box (forces React client-side routing)."""
